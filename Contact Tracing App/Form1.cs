@@ -1,3 +1,4 @@
+
 namespace Contact_Tracing_App
 {
     public partial class ContactTracingForm : Form
@@ -60,6 +61,13 @@ namespace Contact_Tracing_App
         private void groupBox2_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void SubmitButton_Click(object sender, EventArgs e)
+        {
+            StreamWriter file = new StreamWriter(@"C:\Users\Nicole\Documents\ContactTracing.txt");
+            file.WriteLine("Name: " + NameTxtbox.Text);
+            file.Close();
         }
     }
 }

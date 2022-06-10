@@ -528,6 +528,7 @@
             this.SubmitButton.TabIndex = 44;
             this.SubmitButton.Text = "Submit";
             this.SubmitButton.UseVisualStyleBackColor = false;
+            this.SubmitButton.Click += new System.EventHandler(this.SubmitButton_Click);
             // 
             // SexGrpBox
             // 
