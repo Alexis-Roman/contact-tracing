@@ -66,12 +66,16 @@ namespace Contact_Tracing_App
         private void SubmitButton_Click(object sender, EventArgs e)
         {
             StreamWriter file = new StreamWriter(@"C:\Users\Nicole\Documents\ContactTracing.txt");
+           
+
+            //Personal info
+            file.WriteLine("PERSONAL INFORMATION");
             file.WriteLine("Name: " + NameTxtbox.Text);
             file.WriteLine("Student #: " + StudentNumTxtbox.Text);
             file.WriteLine("Contact #: " + ContTxtbox.Text);
             file.WriteLine("Age: " + AgeTxtbox.Text);
             file.WriteLine("Birthday: " + BdayDate.Text);
-            file.WriteLine("Address: "+ AddressTxtbox.Text);
+            //code for radiobutton male/female
             if (MaleRadioButton.Checked)
                 file.WriteLine("Sex: Male");
             else if (FemaleRadioButton.Checked)
@@ -79,6 +83,17 @@ namespace Contact_Tracing_App
             else
                 MessageBox.Show("Please select your sex at birth.",
                     "No input", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            file.WriteLine("Address: " + AddressTxtbox.Text);
+            file.WriteLine("");
+            file.WriteLine("");
+
+            //Visit info
+            file.WriteLine("VISIT INFORMATION");
+            file.WriteLine("Date of Visit: " + VisitDate.Text);
+            file.WriteLine("Time in: " + TimeIn.Text);
+            file.WriteLine("Time out: " + TimeOut.Text);
+            file.WriteLine("Reason for visit: " + ReasonTxtbox.Text);
             file.Close();
         }
     }

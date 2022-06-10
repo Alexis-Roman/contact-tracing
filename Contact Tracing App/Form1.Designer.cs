@@ -74,7 +74,7 @@
             this.VaccinePanel = new System.Windows.Forms.Panel();
             this.NoVacRdioBut = new System.Windows.Forms.RadioButton();
             this.YesVacRdioBut = new System.Windows.Forms.RadioButton();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.TimeOut = new System.Windows.Forms.DateTimePicker();
             this.StudentNumLbl = new System.Windows.Forms.Label();
             this.StudentNumTxtbox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.LogoPicBox)).BeginInit();
@@ -559,13 +559,13 @@
             this.YesVacRdioBut.Text = "Yes, I\'m vaccinated";
             this.YesVacRdioBut.UseVisualStyleBackColor = false;
             // 
-            // dateTimePicker1
+            // TimeOut
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePicker1.Location = new System.Drawing.Point(716, 249);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(142, 27);
-            this.dateTimePicker1.TabIndex = 51;
+            this.TimeOut.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.TimeOut.Location = new System.Drawing.Point(716, 249);
+            this.TimeOut.Name = "TimeOut";
+            this.TimeOut.Size = new System.Drawing.Size(142, 27);
+            this.TimeOut.TabIndex = 51;
             // 
             // StudentNumLbl
             // 
@@ -595,7 +595,7 @@
             this.ClientSize = new System.Drawing.Size(904, 741);
             this.Controls.Add(this.StudentNumTxtbox);
             this.Controls.Add(this.StudentNumLbl);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.TimeOut);
             this.Controls.Add(this.VaccinePanel);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.SexPanel);
@@ -706,7 +706,7 @@
         private Panel VaccinePanel;
         private RadioButton NoVacRdioBut;
         private RadioButton YesVacRdioBut;
-        private DateTimePicker dateTimePicker1;
+        private DateTimePicker TimeOut;
         private Label StudentNumLbl;
         private TextBox StudentNumTxtbox;
     }
