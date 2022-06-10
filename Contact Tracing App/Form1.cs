@@ -111,7 +111,21 @@ namespace Contact_Tracing_App
                 MessageBox.Show("Please select your vaccine status.",
                     "No input", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-
+            // code for flu symptoms
+            if (NoFluRdioBut.Checked)
+                file.WriteLine("Status: No symptoms of COVID-19");
+            else if (YesFluRdioBut.Checked)
+                {
+                if (SymptomsTxtbox.Text == "")
+                    MessageBox.Show("Please specify your syptoms.",
+                    "No input", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                else
+                    file.WriteLine("Symptoms : ");
+                    file.WriteLine(SymptomsTxtbox.Text);
+            }
+            else
+                MessageBox.Show("Please select your health condition.",
+                    "No input", MessageBoxButtons.OK, MessageBoxIcon.Information);
             file.Close();
 
         }
