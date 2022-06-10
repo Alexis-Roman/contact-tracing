@@ -63,7 +63,7 @@
             this.ConcentChkbox = new System.Windows.Forms.CheckBox();
             this.SymptomsTxtbox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TemperatureTxtBox = new System.Windows.Forms.TextBox();
             this.NoFluRdioBut = new System.Windows.Forms.RadioButton();
             this.YesFluRdioBut = new System.Windows.Forms.RadioButton();
             this.SubmitButton = new System.Windows.Forms.Button();
@@ -430,12 +430,12 @@
             this.label1.TabIndex = 40;
             this.label1.Text = "Temperature:";
             // 
-            // textBox1
+            // TemperatureTxtBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(182, 442);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(55, 27);
-            this.textBox1.TabIndex = 41;
+            this.TemperatureTxtBox.Location = new System.Drawing.Point(182, 442);
+            this.TemperatureTxtBox.Name = "TemperatureTxtBox";
+            this.TemperatureTxtBox.Size = new System.Drawing.Size(55, 27);
+            this.TemperatureTxtBox.TabIndex = 41;
             // 
             // NoFluRdioBut
             // 
@@ -602,7 +602,7 @@
             this.Controls.Add(this.SexLbl);
             this.Controls.Add(this.AddressTxtbox);
             this.Controls.Add(this.SubmitButton);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.TemperatureTxtBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.SymptomsTxtbox);
             this.Controls.Add(this.ConcentChkbox);
@@ -695,7 +695,7 @@
         private CheckBox ConcentChkbox;
         private TextBox SymptomsTxtbox;
         private Label label1;
-        private TextBox textBox1;
+        private TextBox TemperatureTxtBox;
         private RadioButton NoFluRdioBut;
         private RadioButton YesFluRdioBut;
         private Button SubmitButton;

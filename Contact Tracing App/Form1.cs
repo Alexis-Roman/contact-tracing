@@ -94,7 +94,26 @@ namespace Contact_Tracing_App
             file.WriteLine("Time in: " + TimeIn.Text);
             file.WriteLine("Time out: " + TimeOut.Text);
             file.WriteLine("Reason for visit: " + ReasonTxtbox.Text);
+            file.WriteLine("");
+            file.WriteLine("");
+            
+
+            //Medical info
+            file.WriteLine("MEDICAL INFORMATION");
+            file.WriteLine("Temperature: " + TemperatureTxtBox.Text);
+
+            //code for radiobutton vaccinated/unvaccinated
+            if (YesVacRdioBut.Checked)
+                file.WriteLine("Status: Vaccinated");
+            else if (NoVacRdioBut.Checked)
+                file.WriteLine("Status: Unvaccinated");
+            else
+                MessageBox.Show("Please select your vaccine status.",
+                    "No input", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
             file.Close();
+
         }
     }
 }
