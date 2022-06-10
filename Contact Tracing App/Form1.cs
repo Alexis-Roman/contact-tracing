@@ -50,12 +50,16 @@ namespace Contact_Tracing_App
 
         private void SubmitButton_Click(object sender, EventArgs e)
         {
-         if (ConcentChkbox.Checked && AgeTxtbox.Text != "" && AddressTxtbox.Text != "" &&
+
+            if (ConcentChkbox.Checked && AgeTxtbox.Text != "" && AddressTxtbox.Text != "" &&
                 StudentNumTxtbox.Text != "" && NameTxtbox.Text != "" && ContTxtbox.Text != "" &&
                 ReasonTxtbox.Text != "" && TemperatureTxtBox.Text != "" && (FemaleRadioButton.Checked
-                || MaleRadioButton.Checked) && (YesFluRdioBut.Checked || NoFluRdioBut.Checked) &&
-                (NoFluRdioBut.Checked || YesFluRdioBut.Checked))
-          {
+                || MaleRadioButton.Checked) && (YesVacRdioBut.Checked || NoVacRdioBut.Checked) &&
+                ((YesFluRdioBut.Checked == true && SymptomsTxtbox.Text != "") || 
+                NoFluRdioBut.Checked))
+            
+            {
+                
                 StreamWriter file = new StreamWriter(@"C:\Users\Nicole\Documents\ContactTracing.txt", true);
 
 
@@ -101,14 +105,10 @@ namespace Contact_Tracing_App
                     file.WriteLine("Status: No symptoms of COVID-19");
                 else if (YesFluRdioBut.Checked)
                 {
-                    if (SymptomsTxtbox.Text == "")
-                        MessageBox.Show("Please specify your syptoms.",
-                        "No input", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    else
-                        file.WriteLine("Symptoms : ");
+                    file.WriteLine("Symptoms : ");
                     file.WriteLine(SymptomsTxtbox.Text);
                 }
-                    
+
 
                 MessageBox.Show("Your information has been recorded. Keep safe!",
                       "Information Recorded", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -126,7 +126,10 @@ namespace Contact_Tracing_App
                 if(YesVacRdioBut.Checked == false && NoVacRdioBut.Checked == false)
                     MessageBox.Show("Please select your vaccine status.",
                         "No input", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                if(YesFluRdioBut.Checked == false || NoFluRdioBut.Checked == false)
+                if (YesFluRdioBut.Checked == true && SymptomsTxtbox.Text == "")
+                    MessageBox.Show("Please specify your syptoms.",
+                    "No input", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (YesFluRdioBut.Checked == false && NoFluRdioBut.Checked == false)
                     MessageBox.Show("Please select your health condition.",
                         "No input", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
