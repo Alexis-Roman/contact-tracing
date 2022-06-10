@@ -49,10 +49,9 @@
             this.BdayDate = new System.Windows.Forms.DateTimePicker();
             this.DateLbl = new System.Windows.Forms.Label();
             this.VisitDate = new System.Windows.Forms.DateTimePicker();
-            this.SchoolLbl = new System.Windows.Forms.Label();
-            this.SchoolTxtbox = new System.Windows.Forms.TextBox();
-            this.TimeLbl = new System.Windows.Forms.Label();
-            this.TimeDate = new System.Windows.Forms.DateTimePicker();
+            this.TimeOutLbl = new System.Windows.Forms.Label();
+            this.TimeInLbl = new System.Windows.Forms.Label();
+            this.TimeIn = new System.Windows.Forms.DateTimePicker();
             this.ResonLbl = new System.Windows.Forms.Label();
             this.ReasonTxtbox = new System.Windows.Forms.TextBox();
             this.MedInfoPicbox = new System.Windows.Forms.PictureBox();
@@ -73,8 +72,11 @@
             this.Gender2RadioButton = new System.Windows.Forms.RadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.VaccinePanel = new System.Windows.Forms.Panel();
-            this.YesVacRdioBut = new System.Windows.Forms.RadioButton();
             this.NoVacRdioBut = new System.Windows.Forms.RadioButton();
+            this.YesVacRdioBut = new System.Windows.Forms.RadioButton();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.StudentNumLbl = new System.Windows.Forms.Label();
+            this.StudentNumTxtbox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.LogoPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AkademiPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MedLogo)).BeginInit();
@@ -217,7 +219,7 @@
             this.ContactLbl.AutoSize = true;
             this.ContactLbl.BackColor = System.Drawing.Color.MistyRose;
             this.ContactLbl.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ContactLbl.Location = new System.Drawing.Point(42, 218);
+            this.ContactLbl.Location = new System.Drawing.Point(42, 244);
             this.ContactLbl.Name = "ContactLbl";
             this.ContactLbl.Size = new System.Drawing.Size(94, 23);
             this.ContactLbl.TabIndex = 15;
@@ -228,7 +230,7 @@
             this.AddressLbl.AutoSize = true;
             this.AddressLbl.BackColor = System.Drawing.Color.MistyRose;
             this.AddressLbl.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.AddressLbl.Location = new System.Drawing.Point(42, 258);
+            this.AddressLbl.Location = new System.Drawing.Point(42, 278);
             this.AddressLbl.Name = "AddressLbl";
             this.AddressLbl.Size = new System.Drawing.Size(112, 23);
             this.AddressLbl.TabIndex = 16;
@@ -236,7 +238,7 @@
             // 
             // AddressTxtbox
             // 
-            this.AddressTxtbox.Location = new System.Drawing.Point(42, 290);
+            this.AddressTxtbox.Location = new System.Drawing.Point(42, 308);
             this.AddressTxtbox.Multiline = true;
             this.AddressTxtbox.Name = "AddressTxtbox";
             this.AddressTxtbox.Size = new System.Drawing.Size(494, 54);
@@ -244,7 +246,7 @@
             // 
             // ContTxtbox
             // 
-            this.ContTxtbox.Location = new System.Drawing.Point(142, 214);
+            this.ContTxtbox.Location = new System.Drawing.Point(142, 242);
             this.ContTxtbox.Name = "ContTxtbox";
             this.ContTxtbox.Size = new System.Drawing.Size(157, 27);
             this.ContTxtbox.TabIndex = 18;
@@ -288,42 +290,35 @@
             this.VisitDate.Size = new System.Drawing.Size(177, 27);
             this.VisitDate.TabIndex = 23;
             // 
-            // SchoolLbl
+            // TimeOutLbl
             // 
-            this.SchoolLbl.AutoSize = true;
-            this.SchoolLbl.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.SchoolLbl.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.SchoolLbl.Location = new System.Drawing.Point(621, 254);
-            this.SchoolLbl.Name = "SchoolLbl";
-            this.SchoolLbl.Size = new System.Drawing.Size(70, 23);
-            this.SchoolLbl.TabIndex = 24;
-            this.SchoolLbl.Text = "School:";
+            this.TimeOutLbl.AutoSize = true;
+            this.TimeOutLbl.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.TimeOutLbl.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TimeOutLbl.Location = new System.Drawing.Point(621, 254);
+            this.TimeOutLbl.Name = "TimeOutLbl";
+            this.TimeOutLbl.Size = new System.Drawing.Size(89, 23);
+            this.TimeOutLbl.TabIndex = 24;
+            this.TimeOutLbl.Text = "Time Out:";
             // 
-            // SchoolTxtbox
+            // TimeInLbl
             // 
-            this.SchoolTxtbox.Location = new System.Drawing.Point(697, 254);
-            this.SchoolTxtbox.Name = "SchoolTxtbox";
-            this.SchoolTxtbox.Size = new System.Drawing.Size(161, 27);
-            this.SchoolTxtbox.TabIndex = 25;
+            this.TimeInLbl.AutoSize = true;
+            this.TimeInLbl.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.TimeInLbl.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TimeInLbl.Location = new System.Drawing.Point(621, 214);
+            this.TimeInLbl.Name = "TimeInLbl";
+            this.TimeInLbl.Size = new System.Drawing.Size(75, 23);
+            this.TimeInLbl.TabIndex = 26;
+            this.TimeInLbl.Text = "Time in:";
             // 
-            // TimeLbl
+            // TimeIn
             // 
-            this.TimeLbl.AutoSize = true;
-            this.TimeLbl.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.TimeLbl.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TimeLbl.Location = new System.Drawing.Point(621, 214);
-            this.TimeLbl.Name = "TimeLbl";
-            this.TimeLbl.Size = new System.Drawing.Size(55, 23);
-            this.TimeLbl.TabIndex = 26;
-            this.TimeLbl.Text = "Time:";
-            // 
-            // TimeDate
-            // 
-            this.TimeDate.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.TimeDate.Location = new System.Drawing.Point(682, 212);
-            this.TimeDate.Name = "TimeDate";
-            this.TimeDate.Size = new System.Drawing.Size(176, 27);
-            this.TimeDate.TabIndex = 27;
+            this.TimeIn.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.TimeIn.Location = new System.Drawing.Point(702, 212);
+            this.TimeIn.Name = "TimeIn";
+            this.TimeIn.Size = new System.Drawing.Size(156, 27);
+            this.TimeIn.TabIndex = 27;
             // 
             // ResonLbl
             // 
@@ -538,19 +533,6 @@
             this.VaccinePanel.Size = new System.Drawing.Size(187, 79);
             this.VaccinePanel.TabIndex = 50;
             // 
-            // YesVacRdioBut
-            // 
-            this.YesVacRdioBut.AutoSize = true;
-            this.YesVacRdioBut.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.YesVacRdioBut.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.YesVacRdioBut.Location = new System.Drawing.Point(3, 5);
-            this.YesVacRdioBut.Name = "YesVacRdioBut";
-            this.YesVacRdioBut.Size = new System.Drawing.Size(174, 27);
-            this.YesVacRdioBut.TabIndex = 38;
-            this.YesVacRdioBut.TabStop = true;
-            this.YesVacRdioBut.Text = "Yes, I\'m vaccinated";
-            this.YesVacRdioBut.UseVisualStyleBackColor = false;
-            // 
             // NoVacRdioBut
             // 
             this.NoVacRdioBut.AutoSize = true;
@@ -564,6 +546,45 @@
             this.NoVacRdioBut.Text = "No, I\'m not";
             this.NoVacRdioBut.UseVisualStyleBackColor = false;
             // 
+            // YesVacRdioBut
+            // 
+            this.YesVacRdioBut.AutoSize = true;
+            this.YesVacRdioBut.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.YesVacRdioBut.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.YesVacRdioBut.Location = new System.Drawing.Point(3, 5);
+            this.YesVacRdioBut.Name = "YesVacRdioBut";
+            this.YesVacRdioBut.Size = new System.Drawing.Size(174, 27);
+            this.YesVacRdioBut.TabIndex = 38;
+            this.YesVacRdioBut.TabStop = true;
+            this.YesVacRdioBut.Text = "Yes, I\'m vaccinated";
+            this.YesVacRdioBut.UseVisualStyleBackColor = false;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dateTimePicker1.Location = new System.Drawing.Point(716, 249);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(142, 27);
+            this.dateTimePicker1.TabIndex = 51;
+            // 
+            // StudentNumLbl
+            // 
+            this.StudentNumLbl.AutoSize = true;
+            this.StudentNumLbl.BackColor = System.Drawing.Color.MistyRose;
+            this.StudentNumLbl.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.StudentNumLbl.Location = new System.Drawing.Point(42, 212);
+            this.StudentNumLbl.Name = "StudentNumLbl";
+            this.StudentNumLbl.Size = new System.Drawing.Size(94, 23);
+            this.StudentNumLbl.TabIndex = 52;
+            this.StudentNumLbl.Text = "Student #:";
+            // 
+            // StudentNumTxtbox
+            // 
+            this.StudentNumTxtbox.Location = new System.Drawing.Point(142, 209);
+            this.StudentNumTxtbox.Name = "StudentNumTxtbox";
+            this.StudentNumTxtbox.Size = new System.Drawing.Size(157, 27);
+            this.StudentNumTxtbox.TabIndex = 53;
+            // 
             // ContactTracingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -572,6 +593,9 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(904, 741);
+            this.Controls.Add(this.StudentNumTxtbox);
+            this.Controls.Add(this.StudentNumLbl);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.VaccinePanel);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.SexPanel);
@@ -590,10 +614,9 @@
             this.Controls.Add(this.MedInfoPicbox);
             this.Controls.Add(this.ReasonTxtbox);
             this.Controls.Add(this.ResonLbl);
-            this.Controls.Add(this.TimeDate);
-            this.Controls.Add(this.TimeLbl);
-            this.Controls.Add(this.SchoolTxtbox);
-            this.Controls.Add(this.SchoolLbl);
+            this.Controls.Add(this.TimeIn);
+            this.Controls.Add(this.TimeInLbl);
+            this.Controls.Add(this.TimeOutLbl);
             this.Controls.Add(this.VisitDate);
             this.Controls.Add(this.DateLbl);
             this.Controls.Add(this.BdayDate);
@@ -658,10 +681,9 @@
         private DateTimePicker BdayDate;
         private Label DateLbl;
         private DateTimePicker VisitDate;
-        private Label SchoolLbl;
-        private TextBox SchoolTxtbox;
-        private Label TimeLbl;
-        private DateTimePicker TimeDate;
+        private Label TimeOutLbl;
+        private Label TimeInLbl;
+        private DateTimePicker TimeIn;
         private Label ResonLbl;
         private TextBox ReasonTxtbox;
         private PictureBox MedInfoPicbox;
@@ -684,5 +706,8 @@
         private Panel VaccinePanel;
         private RadioButton NoVacRdioBut;
         private RadioButton YesVacRdioBut;
+        private DateTimePicker dateTimePicker1;
+        private Label StudentNumLbl;
+        private TextBox StudentNumTxtbox;
     }
 }
