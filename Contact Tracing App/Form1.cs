@@ -66,7 +66,12 @@ namespace Contact_Tracing_App
         private void SubmitButton_Click(object sender, EventArgs e)
         {
             StreamWriter file = new StreamWriter(@"C:\Users\Nicole\Documents\ContactTracing.txt");
-           
+
+            //code for concent 
+            if (ConcentChkbox.Checked)
+                SubmitButton.Enabled = true;
+            else
+                SubmitButton.Enabled = false;
 
             //Personal info
             file.WriteLine("PERSONAL INFORMATION");
@@ -126,7 +131,10 @@ namespace Contact_Tracing_App
             else
                 MessageBox.Show("Please select your health condition.",
                     "No input", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            
             file.Close();
+
 
         }
     }
