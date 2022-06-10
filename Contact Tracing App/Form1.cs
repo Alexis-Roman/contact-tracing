@@ -67,10 +67,18 @@ namespace Contact_Tracing_App
         {
             StreamWriter file = new StreamWriter(@"C:\Users\Nicole\Documents\ContactTracing.txt");
             file.WriteLine("Name: " + NameTxtbox.Text);
+            file.WriteLine("Student #: " + StudentNumTxtbox.Text);
             file.WriteLine("Contact #: " + ContTxtbox.Text);
             file.WriteLine("Age: " + AgeTxtbox.Text);
             file.WriteLine("Birthday: " + BdayDate.Text);
             file.WriteLine("Address: "+ AddressTxtbox.Text);
+            if (MaleRadioButton.Checked)
+                file.WriteLine("Sex: Male");
+            else if (FemaleRadioButton.Checked)
+                file.WriteLine("Sex: Female");
+            else
+                MessageBox.Show("Please select your sex at birth.",
+                    "No input", MessageBoxButtons.OK, MessageBoxIcon.Information);
             file.Close();
         }
     }

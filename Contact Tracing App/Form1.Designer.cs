@@ -68,8 +68,8 @@
             this.YesFluRdioBut = new System.Windows.Forms.RadioButton();
             this.SubmitButton = new System.Windows.Forms.Button();
             this.SexPanel = new System.Windows.Forms.Panel();
-            this.Gender1RadioButton = new System.Windows.Forms.RadioButton();
-            this.Gender2RadioButton = new System.Windows.Forms.RadioButton();
+            this.MaleRadioButton = new System.Windows.Forms.RadioButton();
+            this.FemaleRadioButton = new System.Windows.Forms.RadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.VaccinePanel = new System.Windows.Forms.Panel();
             this.NoVacRdioBut = new System.Windows.Forms.RadioButton();
@@ -479,39 +479,39 @@
             // SexPanel
             // 
             this.SexPanel.BackColor = System.Drawing.Color.MistyRose;
-            this.SexPanel.Controls.Add(this.Gender1RadioButton);
-            this.SexPanel.Controls.Add(this.Gender2RadioButton);
+            this.SexPanel.Controls.Add(this.MaleRadioButton);
+            this.SexPanel.Controls.Add(this.FemaleRadioButton);
             this.SexPanel.Location = new System.Drawing.Point(379, 249);
             this.SexPanel.Name = "SexPanel";
             this.SexPanel.Size = new System.Drawing.Size(177, 35);
             this.SexPanel.TabIndex = 48;
             // 
-            // Gender1RadioButton
+            // MaleRadioButton
             // 
-            this.Gender1RadioButton.AutoSize = true;
-            this.Gender1RadioButton.BackColor = System.Drawing.Color.MistyRose;
-            this.Gender1RadioButton.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Gender1RadioButton.Location = new System.Drawing.Point(1, 2);
-            this.Gender1RadioButton.Name = "Gender1RadioButton";
-            this.Gender1RadioButton.Size = new System.Drawing.Size(68, 27);
-            this.Gender1RadioButton.TabIndex = 7;
-            this.Gender1RadioButton.TabStop = true;
-            this.Gender1RadioButton.Text = "Male";
-            this.Gender1RadioButton.UseVisualStyleBackColor = false;
+            this.MaleRadioButton.AutoSize = true;
+            this.MaleRadioButton.BackColor = System.Drawing.Color.MistyRose;
+            this.MaleRadioButton.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MaleRadioButton.Location = new System.Drawing.Point(1, 2);
+            this.MaleRadioButton.Name = "MaleRadioButton";
+            this.MaleRadioButton.Size = new System.Drawing.Size(68, 27);
+            this.MaleRadioButton.TabIndex = 7;
+            this.MaleRadioButton.TabStop = true;
+            this.MaleRadioButton.Text = "Male";
+            this.MaleRadioButton.UseVisualStyleBackColor = false;
             // 
-            // Gender2RadioButton
+            // FemaleRadioButton
             // 
-            this.Gender2RadioButton.AutoSize = true;
-            this.Gender2RadioButton.BackColor = System.Drawing.Color.MistyRose;
-            this.Gender2RadioButton.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Gender2RadioButton.Location = new System.Drawing.Point(80, 3);
-            this.Gender2RadioButton.Name = "Gender2RadioButton";
-            this.Gender2RadioButton.Size = new System.Drawing.Size(85, 27);
-            this.Gender2RadioButton.TabIndex = 6;
-            this.Gender2RadioButton.TabStop = true;
-            this.Gender2RadioButton.Text = "Female";
-            this.Gender2RadioButton.UseVisualStyleBackColor = false;
-            this.Gender2RadioButton.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            this.FemaleRadioButton.AutoSize = true;
+            this.FemaleRadioButton.BackColor = System.Drawing.Color.MistyRose;
+            this.FemaleRadioButton.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.FemaleRadioButton.Location = new System.Drawing.Point(80, 3);
+            this.FemaleRadioButton.Name = "FemaleRadioButton";
+            this.FemaleRadioButton.Size = new System.Drawing.Size(85, 27);
+            this.FemaleRadioButton.TabIndex = 6;
+            this.FemaleRadioButton.TabStop = true;
+            this.FemaleRadioButton.Text = "Female";
+            this.FemaleRadioButton.UseVisualStyleBackColor = false;
+            this.FemaleRadioButton.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // panel1
             // 
@@ -700,8 +700,8 @@
         private RadioButton YesFluRdioBut;
         private Button SubmitButton;
         private Panel SexPanel;
-        private RadioButton Gender1RadioButton;
-        private RadioButton Gender2RadioButton;
+        private RadioButton MaleRadioButton;
+        private RadioButton FemaleRadioButton;
         private Panel panel1;
         private Panel VaccinePanel;
         private RadioButton NoVacRdioBut;
