@@ -50,78 +50,89 @@ namespace Contact_Tracing_App
 
         private void SubmitButton_Click(object sender, EventArgs e)
         {
-            StreamWriter file = new StreamWriter(@"C:\Users\Nicole\Documents\ContactTracing.txt");
+         if (ConcentChkbox.Checked && AgeTxtbox.Text != "" && AddressTxtbox.Text != "" &&
+                StudentNumTxtbox.Text != "" && NameTxtbox.Text != "" && ContTxtbox.Text != "" &&
+                ReasonTxtbox.Text != "" && TemperatureTxtBox.Text != "" && (FemaleRadioButton.Checked
+                || MaleRadioButton.Checked) && (YesFluRdioBut.Checked || NoFluRdioBut.Checked) &&
+                (NoFluRdioBut.Checked || YesFluRdioBut.Checked))
+          {
+                StreamWriter file = new StreamWriter(@"C:\Users\Nicole\Documents\ContactTracing.txt", true);
 
-            
-            //Personal info
-            file.WriteLine("PERSONAL INFORMATION");
-            file.WriteLine("Name: " + NameTxtbox.Text);
-            file.WriteLine("Student #: " + StudentNumTxtbox.Text);
-            file.WriteLine("Contact #: " + ContTxtbox.Text);
-            file.WriteLine("Age: " + AgeTxtbox.Text);
-            file.WriteLine("Birthday: " + BdayDate.Text);
-            //code for radiobutton male/female
-            if (MaleRadioButton.Checked)
-                file.WriteLine("Sex: Male");
-            else if (FemaleRadioButton.Checked)
-                file.WriteLine("Sex: Female");
-            else
-                MessageBox.Show("Please select your sex at birth.",
-                    "No input", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            file.WriteLine("Address: " + AddressTxtbox.Text);
-            file.WriteLine("");
-            file.WriteLine("");
+                //Personal info
+                file.WriteLine("PERSONAL INFORMATION");
+                file.WriteLine("Name: " + NameTxtbox.Text);
+                file.WriteLine("Student #: " + StudentNumTxtbox.Text);
+                file.WriteLine("Contact #: " + ContTxtbox.Text);
+                file.WriteLine("Age: " + AgeTxtbox.Text);
+                file.WriteLine("Birthday: " + BdayDate.Text);
 
-            //Visit info
-            file.WriteLine("VISIT INFORMATION");
-            file.WriteLine("Date of Visit: " + VisitDate.Text);
-            file.WriteLine("Time in: " + TimeIn.Text);
-            file.WriteLine("Time out: " + TimeOut.Text);
-            file.WriteLine("Reason for visit: " + ReasonTxtbox.Text);
-            file.WriteLine("");
-            file.WriteLine("");
-            
+                //code for radiobutton male/female
+                if (MaleRadioButton.Checked)
+                    file.WriteLine("Sex: Male");
+                else if (FemaleRadioButton.Checked)
+                    file.WriteLine("Sex: Female");
+                
+                file.WriteLine("Address: " + AddressTxtbox.Text);
+                file.WriteLine("");
+                file.WriteLine("");
 
-            //Medical info
-            file.WriteLine("MEDICAL INFORMATION");
-            file.WriteLine("Temperature: " + TemperatureTxtBox.Text);
+                //Visit info
+                file.WriteLine("VISIT INFORMATION");
+                file.WriteLine("Date of Visit: " + VisitDate.Text);
+                file.WriteLine("Time in: " + TimeIn.Text);
+                file.WriteLine("Time out: " + TimeOut.Text);
+                file.WriteLine("Reason for visit: " + ReasonTxtbox.Text);
+                file.WriteLine("");
+                file.WriteLine("");
 
-            //code for radiobutton vaccinated/unvaccinated
-            if (YesVacRdioBut.Checked)
-                file.WriteLine("Status: Vaccinated");
-            else if (NoVacRdioBut.Checked)
-                file.WriteLine("Status: Unvaccinated");
-            else
-                MessageBox.Show("Please select your vaccine status.",
-                    "No input", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //Medical info
+                file.WriteLine("MEDICAL INFORMATION");
+                file.WriteLine("Temperature: " + TemperatureTxtBox.Text);
 
-            // code for flu symptoms
-            if (NoFluRdioBut.Checked)
-                file.WriteLine("Status: No symptoms of COVID-19");
-            else if (YesFluRdioBut.Checked)
+                //code for radiobutton vaccinated/unvaccinated
+                if (YesVacRdioBut.Checked)
+                    file.WriteLine("Status: Vaccinated");
+                else if (NoVacRdioBut.Checked)
+                    file.WriteLine("Status: Unvaccinated");              
+
+                // code for flu symptoms
+                if (NoFluRdioBut.Checked)
+                    file.WriteLine("Status: No symptoms of COVID-19");
+                else if (YesFluRdioBut.Checked)
                 {
-                if (SymptomsTxtbox.Text == "")
-                    MessageBox.Show("Please specify your syptoms.",
-                    "No input", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                else
-                    file.WriteLine("Symptoms : ");
+                    if (SymptomsTxtbox.Text == "")
+                        MessageBox.Show("Please specify your syptoms.",
+                        "No input", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    else
+                        file.WriteLine("Symptoms : ");
                     file.WriteLine(SymptomsTxtbox.Text);
-            }
-            else
-                MessageBox.Show("Please select your health condition.",
-                    "No input", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                    
 
-            if (ConcentChkbox.Checked)
-                {
                 MessageBox.Show("Your information has been recorded. Keep safe!",
                       "Information Recorded", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
+                file.WriteLine("");
+                file.WriteLine("");
+                file.Close();
+            }
+            
+
             else
-                { }
+            {
+                if(MaleRadioButton.Checked == false && FemaleRadioButton.Checked == false)
+                    MessageBox.Show("Please select your sex at birth.",
+                    "No input", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if(YesVacRdioBut.Checked == false && NoVacRdioBut.Checked == false)
+                    MessageBox.Show("Please select your vaccine status.",
+                        "No input", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if(YesFluRdioBut.Checked == false || NoFluRdioBut.Checked == false)
+                    MessageBox.Show("Please select your health condition.",
+                        "No input", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            file.Close();
-
+                MessageBox.Show("Please provide the necessary information.",
+                      "Incomplete Input", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
 
         }
 
@@ -160,6 +171,21 @@ namespace Contact_Tracing_App
                 MessageBox.Show("Please check the consent statement",
                     "No input", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
+
+        private void ReasonTxtbox_Click(object sender, EventArgs e)
+        {
+            ReasonTxtbox.Text = ("");
+        }
+
+        private void SymptomsTxtbox_Click(object sender, EventArgs e)
+        {
+            SymptomsTxtbox.Text = ("");
+        }
+
+        private void AgeTxtbox_Click(object sender, EventArgs e)
+        {
+            AgeTxtbox.Text = ("");
         }
     }
 }

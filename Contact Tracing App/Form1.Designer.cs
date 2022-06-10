@@ -201,6 +201,7 @@
             this.AgeTxtbox.Name = "AgeTxtbox";
             this.AgeTxtbox.Size = new System.Drawing.Size(155, 27);
             this.AgeTxtbox.TabIndex = 13;
+            this.AgeTxtbox.Click += new System.EventHandler(this.AgeTxtbox_Click);
             // 
             // SexLbl
             // 
@@ -342,6 +343,7 @@
             this.ReasonTxtbox.Name = "ReasonTxtbox";
             this.ReasonTxtbox.Size = new System.Drawing.Size(237, 44);
             this.ReasonTxtbox.TabIndex = 29;
+            this.ReasonTxtbox.Click += new System.EventHandler(this.ReasonTxtbox_Click);
             // 
             // MedInfoPicbox
             // 
@@ -423,6 +425,7 @@
             this.SymptomsTxtbox.Name = "SymptomsTxtbox";
             this.SymptomsTxtbox.Size = new System.Drawing.Size(464, 78);
             this.SymptomsTxtbox.TabIndex = 37;
+            this.SymptomsTxtbox.Click += new System.EventHandler(this.SymptomsTxtbox_Click);
             // 
             // label1
             // 
