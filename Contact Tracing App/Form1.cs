@@ -69,10 +69,14 @@ namespace Contact_Tracing_App
 
             //code for concent 
             if (ConcentChkbox.Checked)
+                {
                 SubmitButton.Enabled = true;
+                MessageBox.Show("Your information has been recorded. Keep safe!",
+                    "Information Recorded", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             else
-                SubmitButton.Enabled = false;
-
+                MessageBox.Show("Please check the consent statement",
+                    "No input", MessageBoxButtons.OK, MessageBoxIcon.Information);
             //Personal info
             file.WriteLine("PERSONAL INFORMATION");
             file.WriteLine("Name: " + NameTxtbox.Text);

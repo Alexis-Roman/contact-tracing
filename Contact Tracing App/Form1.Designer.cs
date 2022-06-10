@@ -466,6 +466,7 @@
             // SubmitButton
             // 
             this.SubmitButton.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.SubmitButton.Enabled = false;
             this.SubmitButton.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.SubmitButton.ForeColor = System.Drawing.Color.White;
             this.SubmitButton.Location = new System.Drawing.Point(760, 687);
