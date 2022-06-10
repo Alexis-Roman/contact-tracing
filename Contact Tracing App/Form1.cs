@@ -144,12 +144,15 @@ namespace Contact_Tracing_App
         {
             //code for concent 
             if (ConcentChkbox.Checked)
-            {
+                {
                 SubmitButton.Enabled = true;
-            }
-            else
+                }
+            else if (ConcentChkbox.Checked == false)
+                {
+                SubmitButton.Enabled = false;
                 MessageBox.Show("Please check the consent statement",
                     "No input", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
         }
     }
 }
