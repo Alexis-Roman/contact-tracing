@@ -58,7 +58,7 @@
             this.MedInfoLbl = new System.Windows.Forms.Label();
             this.VaccineLbl = new System.Windows.Forms.Label();
             this.FluLbl = new System.Windows.Forms.Label();
-            this.ConcentLbl = new System.Windows.Forms.Label();
+            this.ConsentLbl = new System.Windows.Forms.Label();
             this.YesLbl = new System.Windows.Forms.Label();
             this.ConcentChkbox = new System.Windows.Forms.CheckBox();
             this.SymptomsTxtbox = new System.Windows.Forms.TextBox();
@@ -385,15 +385,15 @@
             this.FluLbl.TabIndex = 33;
             this.FluLbl.Text = "Experiencing flu like symptoms?";
             // 
-            // ConcentLbl
+            // ConsentLbl
             // 
-            this.ConcentLbl.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.ConcentLbl.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ConcentLbl.Location = new System.Drawing.Point(92, 582);
-            this.ConcentLbl.Name = "ConcentLbl";
-            this.ConcentLbl.Size = new System.Drawing.Size(754, 90);
-            this.ConcentLbl.TabIndex = 34;
-            this.ConcentLbl.Text = resources.GetString("ConcentLbl.Text");
+            this.ConsentLbl.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.ConsentLbl.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ConsentLbl.Location = new System.Drawing.Point(92, 582);
+            this.ConsentLbl.Name = "ConsentLbl";
+            this.ConsentLbl.Size = new System.Drawing.Size(754, 90);
+            this.ConsentLbl.TabIndex = 34;
+            this.ConsentLbl.Text = resources.GetString("ConsentLbl.Text");
             // 
             // YesLbl
             // 
@@ -414,7 +414,7 @@
             this.ConcentChkbox.Size = new System.Drawing.Size(18, 17);
             this.ConcentChkbox.TabIndex = 36;
             this.ConcentChkbox.UseVisualStyleBackColor = true;
-            this.ConcentChkbox.CheckedChanged += new System.EventHandler(this.ConcentChkbox_CheckedChanged);
+            this.ConcentChkbox.CheckedChanged += new System.EventHandler(this.ConsentChkbox_CheckedChanged);
             // 
             // SymptomsTxtbox
             // 
@@ -617,7 +617,7 @@
             this.Controls.Add(this.SymptomsTxtbox);
             this.Controls.Add(this.ConcentChkbox);
             this.Controls.Add(this.YesLbl);
-            this.Controls.Add(this.ConcentLbl);
+            this.Controls.Add(this.ConsentLbl);
             this.Controls.Add(this.FluLbl);
             this.Controls.Add(this.VaccineLbl);
             this.Controls.Add(this.MedInfoLbl);
@@ -700,7 +700,7 @@
         private Label MedInfoLbl;
         private Label VaccineLbl;
         private Label FluLbl;
-        private Label ConcentLbl;
+        private Label ConsentLbl;
         private Label YesLbl;
         private CheckBox ConcentChkbox;
         private TextBox SymptomsTxtbox;

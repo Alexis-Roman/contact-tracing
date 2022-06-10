@@ -125,21 +125,6 @@ namespace Contact_Tracing_App
 
         }
 
-        private void ConcentChkbox_CheckedChanged(object sender, EventArgs e)
-        {
-            //code for concent 
-            if (ConcentChkbox.Checked)
-                {
-                SubmitButton.Enabled = true;
-                }
-            else if (ConcentChkbox.Checked == false)
-                {
-                SubmitButton.Enabled = false;
-                MessageBox.Show("Please check the consent statement",
-                    "No input", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-        }
-
         private void NameTxtbox_Click(object sender, EventArgs e)
         {
             NameTxtbox.Text = ("");
@@ -163,6 +148,18 @@ namespace Contact_Tracing_App
         private void TemperatureTxtBox_Click(object sender, EventArgs e)
         {
             TemperatureTxtBox.Text = ("");
+        }
+
+        private void ConsentChkbox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (ConcentChkbox.Checked)
+                SubmitButton.Enabled = true;
+            else if (ConcentChkbox.Checked == false)
+            {
+                SubmitButton.Enabled = false;
+                MessageBox.Show("Please check the consent statement",
+                    "No input", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }
