@@ -34,8 +34,6 @@
             this.MedLogo = new System.Windows.Forms.PictureBox();
             this.PersoInfoLbl = new System.Windows.Forms.Label();
             this.NameTxtbox = new System.Windows.Forms.TextBox();
-            this.Gender2RadioButton = new System.Windows.Forms.RadioButton();
-            this.Gender1RadioButton = new System.Windows.Forms.RadioButton();
             this.PersoInfoPicbox = new System.Windows.Forms.PictureBox();
             this.NameLbl = new System.Windows.Forms.Label();
             this.VisitInfoPicbox = new System.Windows.Forms.PictureBox();
@@ -65,21 +63,27 @@
             this.YesLbl = new System.Windows.Forms.Label();
             this.ConcentChkbox = new System.Windows.Forms.CheckBox();
             this.SymptomsTxtbox = new System.Windows.Forms.TextBox();
-            this.YesVacRdioBut = new System.Windows.Forms.RadioButton();
-            this.NoVacRdioBut = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.NoFluRdioBut = new System.Windows.Forms.RadioButton();
             this.YesFluRdioBut = new System.Windows.Forms.RadioButton();
             this.SubmitButton = new System.Windows.Forms.Button();
-            this.SexGrpBox = new System.Windows.Forms.GroupBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.SexPanel = new System.Windows.Forms.Panel();
+            this.Gender1RadioButton = new System.Windows.Forms.RadioButton();
+            this.Gender2RadioButton = new System.Windows.Forms.RadioButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.VaccinePanel = new System.Windows.Forms.Panel();
+            this.YesVacRdioBut = new System.Windows.Forms.RadioButton();
+            this.NoVacRdioBut = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.LogoPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AkademiPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MedLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PersoInfoPicbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.VisitInfoPicbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MedInfoPicbox)).BeginInit();
+            this.SexPanel.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.VaccinePanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // LogoPicBox
@@ -136,33 +140,6 @@
             this.NameTxtbox.TabIndex = 5;
             this.NameTxtbox.Text = "(Given, M.I, Last)";
             this.NameTxtbox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // Gender2RadioButton
-            // 
-            this.Gender2RadioButton.AutoSize = true;
-            this.Gender2RadioButton.BackColor = System.Drawing.Color.MistyRose;
-            this.Gender2RadioButton.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Gender2RadioButton.Location = new System.Drawing.Point(458, 257);
-            this.Gender2RadioButton.Name = "Gender2RadioButton";
-            this.Gender2RadioButton.Size = new System.Drawing.Size(85, 27);
-            this.Gender2RadioButton.TabIndex = 6;
-            this.Gender2RadioButton.TabStop = true;
-            this.Gender2RadioButton.Text = "Female";
-            this.Gender2RadioButton.UseVisualStyleBackColor = false;
-            this.Gender2RadioButton.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
-            // 
-            // Gender1RadioButton
-            // 
-            this.Gender1RadioButton.AutoSize = true;
-            this.Gender1RadioButton.BackColor = System.Drawing.Color.MistyRose;
-            this.Gender1RadioButton.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Gender1RadioButton.Location = new System.Drawing.Point(381, 258);
-            this.Gender1RadioButton.Name = "Gender1RadioButton";
-            this.Gender1RadioButton.Size = new System.Drawing.Size(68, 27);
-            this.Gender1RadioButton.TabIndex = 7;
-            this.Gender1RadioButton.TabStop = true;
-            this.Gender1RadioButton.Text = "Male";
-            this.Gender1RadioButton.UseVisualStyleBackColor = false;
             // 
             // PersoInfoPicbox
             // 
@@ -447,32 +424,6 @@
             this.SymptomsTxtbox.Size = new System.Drawing.Size(464, 78);
             this.SymptomsTxtbox.TabIndex = 37;
             // 
-            // YesVacRdioBut
-            // 
-            this.YesVacRdioBut.AutoSize = true;
-            this.YesVacRdioBut.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.YesVacRdioBut.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.YesVacRdioBut.Location = new System.Drawing.Point(66, 509);
-            this.YesVacRdioBut.Name = "YesVacRdioBut";
-            this.YesVacRdioBut.Size = new System.Drawing.Size(174, 27);
-            this.YesVacRdioBut.TabIndex = 38;
-            this.YesVacRdioBut.TabStop = true;
-            this.YesVacRdioBut.Text = "Yes, I\'m vaccinated";
-            this.YesVacRdioBut.UseVisualStyleBackColor = false;
-            // 
-            // NoVacRdioBut
-            // 
-            this.NoVacRdioBut.AutoSize = true;
-            this.NoVacRdioBut.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.NoVacRdioBut.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.NoVacRdioBut.Location = new System.Drawing.Point(66, 546);
-            this.NoVacRdioBut.Name = "NoVacRdioBut";
-            this.NoVacRdioBut.Size = new System.Drawing.Size(118, 27);
-            this.NoVacRdioBut.TabIndex = 39;
-            this.NoVacRdioBut.TabStop = true;
-            this.NoVacRdioBut.Text = "No, I\'m not";
-            this.NoVacRdioBut.UseVisualStyleBackColor = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -496,7 +447,7 @@
             this.NoFluRdioBut.AutoSize = true;
             this.NoFluRdioBut.BackColor = System.Drawing.Color.LightSteelBlue;
             this.NoFluRdioBut.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.NoFluRdioBut.Location = new System.Drawing.Point(769, 408);
+            this.NoFluRdioBut.Location = new System.Drawing.Point(109, 5);
             this.NoFluRdioBut.Name = "NoFluRdioBut";
             this.NoFluRdioBut.Size = new System.Drawing.Size(54, 27);
             this.NoFluRdioBut.TabIndex = 43;
@@ -509,7 +460,7 @@
             this.YesFluRdioBut.AutoSize = true;
             this.YesFluRdioBut.BackColor = System.Drawing.Color.LightSteelBlue;
             this.YesFluRdioBut.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.YesFluRdioBut.Location = new System.Drawing.Point(681, 408);
+            this.YesFluRdioBut.Location = new System.Drawing.Point(22, 6);
             this.YesFluRdioBut.Name = "YesFluRdioBut";
             this.YesFluRdioBut.Size = new System.Drawing.Size(55, 27);
             this.YesFluRdioBut.TabIndex = 42;
@@ -530,29 +481,88 @@
             this.SubmitButton.UseVisualStyleBackColor = false;
             this.SubmitButton.Click += new System.EventHandler(this.SubmitButton_Click);
             // 
-            // SexGrpBox
+            // SexPanel
             // 
-            this.SexGrpBox.BackColor = System.Drawing.Color.MistyRose;
-            this.SexGrpBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SexGrpBox.ForeColor = System.Drawing.Color.Transparent;
-            this.SexGrpBox.Location = new System.Drawing.Point(285, 243);
-            this.SexGrpBox.Name = "SexGrpBox";
-            this.SexGrpBox.Size = new System.Drawing.Size(258, 48);
-            this.SexGrpBox.TabIndex = 45;
-            this.SexGrpBox.TabStop = false;
-            this.SexGrpBox.Visible = false;
+            this.SexPanel.BackColor = System.Drawing.Color.MistyRose;
+            this.SexPanel.Controls.Add(this.Gender1RadioButton);
+            this.SexPanel.Controls.Add(this.Gender2RadioButton);
+            this.SexPanel.Location = new System.Drawing.Point(379, 249);
+            this.SexPanel.Name = "SexPanel";
+            this.SexPanel.Size = new System.Drawing.Size(177, 35);
+            this.SexPanel.TabIndex = 48;
             // 
-            // groupBox1
+            // Gender1RadioButton
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox1.ForeColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Location = new System.Drawing.Point(665, 394);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(193, 48);
-            this.groupBox1.TabIndex = 46;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Visible = false;
+            this.Gender1RadioButton.AutoSize = true;
+            this.Gender1RadioButton.BackColor = System.Drawing.Color.MistyRose;
+            this.Gender1RadioButton.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gender1RadioButton.Location = new System.Drawing.Point(1, 2);
+            this.Gender1RadioButton.Name = "Gender1RadioButton";
+            this.Gender1RadioButton.Size = new System.Drawing.Size(68, 27);
+            this.Gender1RadioButton.TabIndex = 7;
+            this.Gender1RadioButton.TabStop = true;
+            this.Gender1RadioButton.Text = "Male";
+            this.Gender1RadioButton.UseVisualStyleBackColor = false;
+            // 
+            // Gender2RadioButton
+            // 
+            this.Gender2RadioButton.AutoSize = true;
+            this.Gender2RadioButton.BackColor = System.Drawing.Color.MistyRose;
+            this.Gender2RadioButton.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gender2RadioButton.Location = new System.Drawing.Point(80, 3);
+            this.Gender2RadioButton.Name = "Gender2RadioButton";
+            this.Gender2RadioButton.Size = new System.Drawing.Size(85, 27);
+            this.Gender2RadioButton.TabIndex = 6;
+            this.Gender2RadioButton.TabStop = true;
+            this.Gender2RadioButton.Text = "Female";
+            this.Gender2RadioButton.UseVisualStyleBackColor = false;
+            this.Gender2RadioButton.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.panel1.Controls.Add(this.YesFluRdioBut);
+            this.panel1.Controls.Add(this.NoFluRdioBut);
+            this.panel1.Location = new System.Drawing.Point(665, 408);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(192, 41);
+            this.panel1.TabIndex = 49;
+            // 
+            // VaccinePanel
+            // 
+            this.VaccinePanel.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.VaccinePanel.Controls.Add(this.NoVacRdioBut);
+            this.VaccinePanel.Controls.Add(this.YesVacRdioBut);
+            this.VaccinePanel.Location = new System.Drawing.Point(72, 500);
+            this.VaccinePanel.Name = "VaccinePanel";
+            this.VaccinePanel.Size = new System.Drawing.Size(187, 79);
+            this.VaccinePanel.TabIndex = 50;
+            // 
+            // YesVacRdioBut
+            // 
+            this.YesVacRdioBut.AutoSize = true;
+            this.YesVacRdioBut.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.YesVacRdioBut.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.YesVacRdioBut.Location = new System.Drawing.Point(3, 5);
+            this.YesVacRdioBut.Name = "YesVacRdioBut";
+            this.YesVacRdioBut.Size = new System.Drawing.Size(174, 27);
+            this.YesVacRdioBut.TabIndex = 38;
+            this.YesVacRdioBut.TabStop = true;
+            this.YesVacRdioBut.Text = "Yes, I\'m vaccinated";
+            this.YesVacRdioBut.UseVisualStyleBackColor = false;
+            // 
+            // NoVacRdioBut
+            // 
+            this.NoVacRdioBut.AutoSize = true;
+            this.NoVacRdioBut.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.NoVacRdioBut.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.NoVacRdioBut.Location = new System.Drawing.Point(3, 47);
+            this.NoVacRdioBut.Name = "NoVacRdioBut";
+            this.NoVacRdioBut.Size = new System.Drawing.Size(118, 27);
+            this.NoVacRdioBut.TabIndex = 39;
+            this.NoVacRdioBut.TabStop = true;
+            this.NoVacRdioBut.Text = "No, I\'m not";
+            this.NoVacRdioBut.UseVisualStyleBackColor = false;
             // 
             // ContactTracingForm
             // 
@@ -562,19 +572,14 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(904, 741);
-            this.Controls.Add(this.NoFluRdioBut);
-            this.Controls.Add(this.YesFluRdioBut);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.VaccinePanel);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.SexPanel);
             this.Controls.Add(this.SexLbl);
-            this.Controls.Add(this.Gender1RadioButton);
-            this.Controls.Add(this.Gender2RadioButton);
             this.Controls.Add(this.AddressTxtbox);
-            this.Controls.Add(this.SexGrpBox);
             this.Controls.Add(this.SubmitButton);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.NoVacRdioBut);
-            this.Controls.Add(this.YesVacRdioBut);
             this.Controls.Add(this.SymptomsTxtbox);
             this.Controls.Add(this.ConcentChkbox);
             this.Controls.Add(this.YesLbl);
@@ -621,6 +626,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.PersoInfoPicbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.VisitInfoPicbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MedInfoPicbox)).EndInit();
+            this.SexPanel.ResumeLayout(false);
+            this.SexPanel.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.VaccinePanel.ResumeLayout(false);
+            this.VaccinePanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -632,8 +643,6 @@
         private PictureBox MedLogo;
         private Label PersoInfoLbl;
         private TextBox NameTxtbox;
-        private RadioButton Gender2RadioButton;
-        private RadioButton Gender1RadioButton;
         private PictureBox PersoInfoPicbox;
         private Label NameLbl;
         private PictureBox VisitInfoPicbox;
@@ -663,14 +672,17 @@
         private Label YesLbl;
         private CheckBox ConcentChkbox;
         private TextBox SymptomsTxtbox;
-        private RadioButton YesVacRdioBut;
-        private RadioButton NoVacRdioBut;
         private Label label1;
         private TextBox textBox1;
         private RadioButton NoFluRdioBut;
         private RadioButton YesFluRdioBut;
         private Button SubmitButton;
-        private GroupBox SexGrpBox;
-        private GroupBox groupBox1;
+        private Panel SexPanel;
+        private RadioButton Gender1RadioButton;
+        private RadioButton Gender2RadioButton;
+        private Panel panel1;
+        private Panel VaccinePanel;
+        private RadioButton NoVacRdioBut;
+        private RadioButton YesVacRdioBut;
     }
 }
