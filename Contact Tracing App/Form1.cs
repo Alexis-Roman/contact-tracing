@@ -67,16 +67,7 @@ namespace Contact_Tracing_App
         {
             StreamWriter file = new StreamWriter(@"C:\Users\Nicole\Documents\ContactTracing.txt");
 
-            //code for concent 
-            if (ConcentChkbox.Checked)
-                {
-                SubmitButton.Enabled = true;
-                MessageBox.Show("Your information has been recorded. Keep safe!",
-                    "Information Recorded", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-            else
-                MessageBox.Show("Please check the consent statement",
-                    "No input", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            
             //Personal info
             file.WriteLine("PERSONAL INFORMATION");
             file.WriteLine("Name: " + NameTxtbox.Text);
@@ -136,10 +127,29 @@ namespace Contact_Tracing_App
                 MessageBox.Show("Please select your health condition.",
                     "No input", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            
+            if (ConcentChkbox.Checked)
+                {
+                MessageBox.Show("Your information has been recorded. Keep safe!",
+                      "Information Recorded", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            else
+                { }
+
             file.Close();
 
 
+        }
+
+        private void ConcentChkbox_CheckedChanged(object sender, EventArgs e)
+        {
+            //code for concent 
+            if (ConcentChkbox.Checked)
+            {
+                SubmitButton.Enabled = true;
+            }
+            else
+                MessageBox.Show("Please check the consent statement",
+                    "No input", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

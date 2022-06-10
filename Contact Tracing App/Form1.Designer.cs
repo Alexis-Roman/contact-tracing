@@ -410,6 +410,7 @@
             this.ConcentChkbox.Size = new System.Drawing.Size(18, 17);
             this.ConcentChkbox.TabIndex = 36;
             this.ConcentChkbox.UseVisualStyleBackColor = true;
+            this.ConcentChkbox.CheckedChanged += new System.EventHandler(this.ConcentChkbox_CheckedChanged);
             // 
             // SymptomsTxtbox
             // 
