@@ -141,7 +141,7 @@
             this.NameTxtbox.Size = new System.Drawing.Size(193, 27);
             this.NameTxtbox.TabIndex = 5;
             this.NameTxtbox.Text = "(Given, M.I, Last)";
-            this.NameTxtbox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.NameTxtbox.Click += new System.EventHandler(this.NameTxtbox_Click);
             // 
             // PersoInfoPicbox
             // 
@@ -243,6 +243,8 @@
             this.AddressTxtbox.Name = "AddressTxtbox";
             this.AddressTxtbox.Size = new System.Drawing.Size(494, 54);
             this.AddressTxtbox.TabIndex = 17;
+            this.AddressTxtbox.Text = "House#/ Street/ Barangay/ City/ Postal Code";
+            this.AddressTxtbox.Click += new System.EventHandler(this.AddressTxtbox_Click);
             // 
             // ContTxtbox
             // 
@@ -250,6 +252,8 @@
             this.ContTxtbox.Name = "ContTxtbox";
             this.ContTxtbox.Size = new System.Drawing.Size(157, 27);
             this.ContTxtbox.TabIndex = 18;
+            this.ContTxtbox.Text = "09xx-xxxx-xxx";
+            this.ContTxtbox.Click += new System.EventHandler(this.ContTxtbox_Click);
             // 
             // BdayLbl
             // 
@@ -437,6 +441,8 @@
             this.TemperatureTxtBox.Name = "TemperatureTxtBox";
             this.TemperatureTxtBox.Size = new System.Drawing.Size(55, 27);
             this.TemperatureTxtBox.TabIndex = 41;
+            this.TemperatureTxtBox.Text = "°C";
+            this.TemperatureTxtBox.Click += new System.EventHandler(this.TemperatureTxtBox_Click);
             // 
             // NoFluRdioBut
             // 
@@ -586,6 +592,8 @@
             this.StudentNumTxtbox.Name = "StudentNumTxtbox";
             this.StudentNumTxtbox.Size = new System.Drawing.Size(157, 27);
             this.StudentNumTxtbox.TabIndex = 53;
+            this.StudentNumTxtbox.Text = "A.ID 0000-0000";
+            this.StudentNumTxtbox.Click += new System.EventHandler(this.StudentNumTxtbox_Click);
             // 
             // ContactTracingForm
             // 

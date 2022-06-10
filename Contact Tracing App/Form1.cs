@@ -13,11 +13,6 @@ namespace Contact_Tracing_App
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void label1_Click_1(object sender, EventArgs e)
         {
 
@@ -29,11 +24,6 @@ namespace Contact_Tracing_App
         }
 
         private void lbl1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
@@ -54,11 +44,6 @@ namespace Contact_Tracing_App
         }
 
         private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox2_Enter(object sender, EventArgs e)
         {
 
         }
@@ -153,6 +138,31 @@ namespace Contact_Tracing_App
                 MessageBox.Show("Please check the consent statement",
                     "No input", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
+        }
+
+        private void NameTxtbox_Click(object sender, EventArgs e)
+        {
+            NameTxtbox.Text = ("");
+        }
+
+        private void StudentNumTxtbox_Click(object sender, EventArgs e)
+        {
+            StudentNumTxtbox.Text = ("");
+        }
+
+        private void ContTxtbox_Click(object sender, EventArgs e)
+        {
+            ContTxtbox.Text = ("");
+        }
+
+        private void AddressTxtbox_Click(object sender, EventArgs e)
+        {
+            AddressTxtbox.Text = ("");
+        }
+
+        private void TemperatureTxtBox_Click(object sender, EventArgs e)
+        {
+            TemperatureTxtBox.Text = ("");
         }
     }
 }
