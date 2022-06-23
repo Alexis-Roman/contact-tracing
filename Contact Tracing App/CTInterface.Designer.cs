@@ -1,6 +1,6 @@
 ﻿namespace Contact_Tracing_App
 {
-    partial class ContactTracingForm
+    partial class CTInterfaceForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ContactTracingForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CTInterfaceForm));
             this.LogoPicBox = new System.Windows.Forms.PictureBox();
             this.AkademiPic = new System.Windows.Forms.PictureBox();
             this.MedLogo = new System.Windows.Forms.PictureBox();
@@ -614,7 +614,7 @@
             this.AccessButton.UseVisualStyleBackColor = false;
             this.AccessButton.Click += new System.EventHandler(this.AccessButton_Click);
             // 
-            // ContactTracingForm
+            // CTInterfaceForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -669,7 +669,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "ContactTracingForm";
+            this.Name = "CTInterfaceForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Akademi High School Health Department";
             this.Load += new System.EventHandler(this.Form1_Load);

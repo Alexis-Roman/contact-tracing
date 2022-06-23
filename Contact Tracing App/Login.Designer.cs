@@ -48,6 +48,7 @@
             this.SubmittButton.TabIndex = 0;
             this.SubmittButton.Text = "submit";
             this.SubmittButton.UseVisualStyleBackColor = false;
+            this.SubmittButton.Click += new System.EventHandler(this.SubmittButton_Click);
             // 
             // EmployeeLabel
             // 

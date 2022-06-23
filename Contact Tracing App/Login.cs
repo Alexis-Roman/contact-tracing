@@ -16,5 +16,24 @@ namespace Contact_Tracing_App
         {
             InitializeComponent();
         }
+
+        private void SubmittButton_Click(object sender, EventArgs e)
+        {
+            RecordsForm recordsForm = new RecordsForm();
+            CTInterfaceForm ctForm = new CTInterfaceForm();
+            
+            if (IDTextbox.Text == "ID 0001-0123")
+            {
+                recordsForm.Show();
+                this.Close();
+                
+                ctForm.Visible = false;
+
+            }
+            else
+                MessageBox.Show("Invalid Employee ID. Please try again.", 
+                    "Oops!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+        }
     }
 }

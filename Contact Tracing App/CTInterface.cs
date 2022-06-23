@@ -1,9 +1,9 @@
 
 namespace Contact_Tracing_App
 {
-    public partial class ContactTracingForm : Form
+    public partial class CTInterfaceForm : Form
     {
-        public ContactTracingForm()
+        public CTInterfaceForm()
         {
             InitializeComponent();
         }
