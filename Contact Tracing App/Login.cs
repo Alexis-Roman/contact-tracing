@@ -27,7 +27,6 @@ namespace Contact_Tracing_App
                 recordsForm.Show();
                 this.Close();
                 
-                ctForm.Visible = false;
 
             }
             else
