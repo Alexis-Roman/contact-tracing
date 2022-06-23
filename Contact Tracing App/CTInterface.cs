@@ -79,7 +79,6 @@ namespace Contact_Tracing_App
                 
                 file.WriteLine("Address: " + AddressTxtbox.Text);
                 file.WriteLine("");
-                file.WriteLine("");
 
                 //Visit info
                 file.WriteLine("VISIT INFORMATION");
@@ -87,7 +86,6 @@ namespace Contact_Tracing_App
                 file.WriteLine("Time in: " + TimeIn.Text);
                 file.WriteLine("Time out: " + TimeOut.Text);
                 file.WriteLine("Reason for visit: " + ReasonTxtbox.Text);
-                file.WriteLine("");
                 file.WriteLine("");
 
                 //Medical info

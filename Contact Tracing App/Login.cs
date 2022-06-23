@@ -26,8 +26,8 @@ namespace Contact_Tracing_App
         {
             RecordsForm recordsForm = new RecordsForm();
 
-            
-            if (IDTextbox.Text == "ID 0001-0123")
+            //ID 0001-0123
+            if (IDTextbox.Text == "")
             {
                 recordsForm.Show();
                 this.Close();
