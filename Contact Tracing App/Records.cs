@@ -19,8 +19,7 @@ namespace Contact_Tracing_App
 
         private void button1_Click(object sender, EventArgs e)
         {
-            CTInterfaceForm frm = new CTInterfaceForm();
-            frm.Close();
+           
         }
     }
 }

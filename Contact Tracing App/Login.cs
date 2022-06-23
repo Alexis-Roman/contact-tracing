@@ -19,20 +19,23 @@ namespace Contact_Tracing_App
 
         private void SubmittButton_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void SubmitButton_Click(object sender, EventArgs e)
+        {
             RecordsForm recordsForm = new RecordsForm();
-            CTInterfaceForm ctForm = new CTInterfaceForm();
+
             
             if (IDTextbox.Text == "ID 0001-0123")
             {
                 recordsForm.Show();
                 this.Close();
-                
 
             }
             else
-                MessageBox.Show("Invalid Employee ID. Please try again.", 
+                MessageBox.Show("Invalid Employee ID. Please try again.",
                     "Oops!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
         }
     }
 }

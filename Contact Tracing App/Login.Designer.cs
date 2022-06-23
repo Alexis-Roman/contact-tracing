@@ -29,26 +29,13 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
-            this.SubmittButton = new System.Windows.Forms.Button();
             this.EmployeeLabel = new System.Windows.Forms.Label();
             this.IDTextbox = new System.Windows.Forms.TextBox();
             this.InfoLabel = new System.Windows.Forms.Label();
             this.AkademiPic = new System.Windows.Forms.PictureBox();
+            this.SubmitButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.AkademiPic)).BeginInit();
             this.SuspendLayout();
-            // 
-            // SubmittButton
-            // 
-            this.SubmittButton.BackColor = System.Drawing.Color.DarkSalmon;
-            this.SubmittButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SubmittButton.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.SubmittButton.Location = new System.Drawing.Point(254, 135);
-            this.SubmittButton.Name = "SubmittButton";
-            this.SubmittButton.Size = new System.Drawing.Size(94, 29);
-            this.SubmittButton.TabIndex = 0;
-            this.SubmittButton.Text = "submit";
-            this.SubmittButton.UseVisualStyleBackColor = false;
-            this.SubmittButton.Click += new System.EventHandler(this.SubmittButton_Click);
             // 
             // EmployeeLabel
             // 
@@ -88,17 +75,30 @@
             this.AkademiPic.TabIndex = 4;
             this.AkademiPic.TabStop = false;
             // 
+            // SubmitButton
+            // 
+            this.SubmitButton.BackColor = System.Drawing.Color.DarkSalmon;
+            this.SubmitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SubmitButton.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SubmitButton.Location = new System.Drawing.Point(254, 135);
+            this.SubmitButton.Name = "SubmitButton";
+            this.SubmitButton.Size = new System.Drawing.Size(94, 29);
+            this.SubmitButton.TabIndex = 5;
+            this.SubmitButton.Text = "submit";
+            this.SubmitButton.UseVisualStyleBackColor = false;
+            this.SubmitButton.Click += new System.EventHandler(this.SubmitButton_Click);
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
             this.ClientSize = new System.Drawing.Size(370, 176);
+            this.Controls.Add(this.SubmitButton);
             this.Controls.Add(this.AkademiPic);
             this.Controls.Add(this.InfoLabel);
             this.Controls.Add(this.IDTextbox);
             this.Controls.Add(this.EmployeeLabel);
-            this.Controls.Add(this.SubmittButton);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
@@ -110,11 +110,10 @@
         }
 
         #endregion
-
-        private Button SubmittButton;
         private Label EmployeeLabel;
         private TextBox IDTextbox;
         private Label InfoLabel;
         private PictureBox AkademiPic;
+        private Button SubmitButton;
     }
 }

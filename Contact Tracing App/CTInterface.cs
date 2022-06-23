@@ -195,6 +195,7 @@ namespace Contact_Tracing_App
         {
             LoginForm loginForm = new LoginForm();
             loginForm.ShowDialog();
+            
         }
     }
 }
