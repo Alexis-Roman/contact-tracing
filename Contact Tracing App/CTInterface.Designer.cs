@@ -612,6 +612,7 @@
             this.AccessButton.Size = new System.Drawing.Size(60, 54);
             this.AccessButton.TabIndex = 53;
             this.AccessButton.UseVisualStyleBackColor = false;
+            this.AccessButton.Click += new System.EventHandler(this.AccessButton_Click);
             // 
             // ContactTracingForm
             // 

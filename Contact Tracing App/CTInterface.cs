@@ -190,5 +190,10 @@ namespace Contact_Tracing_App
         {
             AgeTxtbox.Text = ("");
         }
+
+        private void AccessButton_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
