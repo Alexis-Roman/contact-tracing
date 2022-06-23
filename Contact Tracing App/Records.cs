@@ -24,13 +24,18 @@ namespace Contact_Tracing_App
 
         private void FindButton_Click(object sender, EventArgs e)
         {
+
+            
+
+        }
+
+        private void RecordsForm_Load(object sender, EventArgs e)
+        {
             StreamReader CTrecord = new StreamReader(@"C:\Users\Nicole\Documents\ContactTracing.txt");
-            while(!CTrecord.EndOfStream)
+            while (!CTrecord.EndOfStream)
             {
                 InfoList.Items.Add(CTrecord.ReadLine());
             }
-
-
         }
     }
 }

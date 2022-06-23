@@ -64,7 +64,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ClientSize = new System.Drawing.Size(677, 477);
+            this.ClientSize = new System.Drawing.Size(688, 477);
             this.Controls.Add(this.InfoList);
             this.Controls.Add(this.FindButton);
             this.Controls.Add(this.FindDatePicker);
@@ -72,6 +72,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Contact Tracing Records";
             this.TopMost = true;
+            this.Load += new System.EventHandler(this.RecordsForm_Load);
             this.ResumeLayout(false);
 
         }
@@ -80,5 +81,6 @@
         private DateTimePicker FindDatePicker;
         private Button FindButton;
         private ListBox InfoList;
+        private ListView InfoListView;
     }
 }
