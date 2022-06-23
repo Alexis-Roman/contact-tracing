@@ -77,6 +77,7 @@
             this.TimeOut = new System.Windows.Forms.DateTimePicker();
             this.StudentNumLbl = new System.Windows.Forms.Label();
             this.StudentNumTxtbox = new System.Windows.Forms.TextBox();
+            this.AccessButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.LogoPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AkademiPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MedLogo)).BeginInit();
@@ -139,7 +140,7 @@
             this.NameTxtbox.Location = new System.Drawing.Point(106, 177);
             this.NameTxtbox.Name = "NameTxtbox";
             this.NameTxtbox.Size = new System.Drawing.Size(193, 27);
-            this.NameTxtbox.TabIndex = 5;
+            this.NameTxtbox.TabIndex = 1;
             this.NameTxtbox.Text = "(Given, M.I, Last)";
             this.NameTxtbox.Click += new System.EventHandler(this.NameTxtbox_Click);
             // 
@@ -200,7 +201,7 @@
             this.AgeTxtbox.Location = new System.Drawing.Point(381, 175);
             this.AgeTxtbox.Name = "AgeTxtbox";
             this.AgeTxtbox.Size = new System.Drawing.Size(155, 27);
-            this.AgeTxtbox.TabIndex = 13;
+            this.AgeTxtbox.TabIndex = 5;
             this.AgeTxtbox.Click += new System.EventHandler(this.AgeTxtbox_Click);
             // 
             // SexLbl
@@ -243,7 +244,7 @@
             this.AddressTxtbox.Multiline = true;
             this.AddressTxtbox.Name = "AddressTxtbox";
             this.AddressTxtbox.Size = new System.Drawing.Size(494, 54);
-            this.AddressTxtbox.TabIndex = 17;
+            this.AddressTxtbox.TabIndex = 4;
             this.AddressTxtbox.Text = "House#/ Street/ Barangay/ City/ Postal Code";
             this.AddressTxtbox.Click += new System.EventHandler(this.AddressTxtbox_Click);
             // 
@@ -252,7 +253,7 @@
             this.ContTxtbox.Location = new System.Drawing.Point(142, 242);
             this.ContTxtbox.Name = "ContTxtbox";
             this.ContTxtbox.Size = new System.Drawing.Size(157, 27);
-            this.ContTxtbox.TabIndex = 18;
+            this.ContTxtbox.TabIndex = 3;
             this.ContTxtbox.Text = "09xx-xxxx-xxx";
             this.ContTxtbox.Click += new System.EventHandler(this.ContTxtbox_Click);
             // 
@@ -273,7 +274,7 @@
             this.BdayDate.Location = new System.Drawing.Point(411, 214);
             this.BdayDate.Name = "BdayDate";
             this.BdayDate.Size = new System.Drawing.Size(125, 27);
-            this.BdayDate.TabIndex = 21;
+            this.BdayDate.TabIndex = 6;
             // 
             // DateLbl
             // 
@@ -293,7 +294,7 @@
             this.VisitDate.Location = new System.Drawing.Point(681, 176);
             this.VisitDate.Name = "VisitDate";
             this.VisitDate.Size = new System.Drawing.Size(177, 27);
-            this.VisitDate.TabIndex = 23;
+            this.VisitDate.TabIndex = 9;
             // 
             // TimeOutLbl
             // 
@@ -323,7 +324,7 @@
             this.TimeIn.Location = new System.Drawing.Point(702, 212);
             this.TimeIn.Name = "TimeIn";
             this.TimeIn.Size = new System.Drawing.Size(156, 27);
-            this.TimeIn.TabIndex = 27;
+            this.TimeIn.TabIndex = 10;
             // 
             // ResonLbl
             // 
@@ -342,7 +343,7 @@
             this.ReasonTxtbox.Multiline = true;
             this.ReasonTxtbox.Name = "ReasonTxtbox";
             this.ReasonTxtbox.Size = new System.Drawing.Size(237, 44);
-            this.ReasonTxtbox.TabIndex = 29;
+            this.ReasonTxtbox.TabIndex = 12;
             this.ReasonTxtbox.Click += new System.EventHandler(this.ReasonTxtbox_Click);
             // 
             // MedInfoPicbox
@@ -414,7 +415,7 @@
             this.ConcentChkbox.Location = new System.Drawing.Point(57, 585);
             this.ConcentChkbox.Name = "ConcentChkbox";
             this.ConcentChkbox.Size = new System.Drawing.Size(18, 17);
-            this.ConcentChkbox.TabIndex = 36;
+            this.ConcentChkbox.TabIndex = 19;
             this.ConcentChkbox.UseVisualStyleBackColor = true;
             this.ConcentChkbox.CheckedChanged += new System.EventHandler(this.ConsentChkbox_CheckedChanged);
             // 
@@ -424,7 +425,7 @@
             this.SymptomsTxtbox.Multiline = true;
             this.SymptomsTxtbox.Name = "SymptomsTxtbox";
             this.SymptomsTxtbox.Size = new System.Drawing.Size(464, 78);
-            this.SymptomsTxtbox.TabIndex = 37;
+            this.SymptomsTxtbox.TabIndex = 18;
             this.SymptomsTxtbox.Click += new System.EventHandler(this.SymptomsTxtbox_Click);
             // 
             // label1
@@ -443,7 +444,7 @@
             this.TemperatureTxtBox.Location = new System.Drawing.Point(182, 442);
             this.TemperatureTxtBox.Name = "TemperatureTxtBox";
             this.TemperatureTxtBox.Size = new System.Drawing.Size(55, 27);
-            this.TemperatureTxtBox.TabIndex = 41;
+            this.TemperatureTxtBox.TabIndex = 13;
             this.TemperatureTxtBox.Text = "°C";
             this.TemperatureTxtBox.Click += new System.EventHandler(this.TemperatureTxtBox_Click);
             // 
@@ -455,7 +456,7 @@
             this.NoFluRdioBut.Location = new System.Drawing.Point(109, 5);
             this.NoFluRdioBut.Name = "NoFluRdioBut";
             this.NoFluRdioBut.Size = new System.Drawing.Size(54, 27);
-            this.NoFluRdioBut.TabIndex = 43;
+            this.NoFluRdioBut.TabIndex = 17;
             this.NoFluRdioBut.TabStop = true;
             this.NoFluRdioBut.Text = "No";
             this.NoFluRdioBut.UseVisualStyleBackColor = false;
@@ -468,7 +469,7 @@
             this.YesFluRdioBut.Location = new System.Drawing.Point(22, 6);
             this.YesFluRdioBut.Name = "YesFluRdioBut";
             this.YesFluRdioBut.Size = new System.Drawing.Size(55, 27);
-            this.YesFluRdioBut.TabIndex = 42;
+            this.YesFluRdioBut.TabIndex = 16;
             this.YesFluRdioBut.TabStop = true;
             this.YesFluRdioBut.Text = "Yes";
             this.YesFluRdioBut.UseVisualStyleBackColor = false;
@@ -482,7 +483,7 @@
             this.SubmitButton.Location = new System.Drawing.Point(760, 687);
             this.SubmitButton.Name = "SubmitButton";
             this.SubmitButton.Size = new System.Drawing.Size(120, 44);
-            this.SubmitButton.TabIndex = 44;
+            this.SubmitButton.TabIndex = 20;
             this.SubmitButton.Text = "Submit";
             this.SubmitButton.UseVisualStyleBackColor = false;
             this.SubmitButton.Click += new System.EventHandler(this.SubmitButton_Click);
@@ -495,7 +496,7 @@
             this.SexPanel.Location = new System.Drawing.Point(379, 249);
             this.SexPanel.Name = "SexPanel";
             this.SexPanel.Size = new System.Drawing.Size(177, 35);
-            this.SexPanel.TabIndex = 48;
+            this.SexPanel.TabIndex = 7;
             // 
             // MaleRadioButton
             // 
@@ -518,7 +519,7 @@
             this.FemaleRadioButton.Location = new System.Drawing.Point(80, 3);
             this.FemaleRadioButton.Name = "FemaleRadioButton";
             this.FemaleRadioButton.Size = new System.Drawing.Size(85, 27);
-            this.FemaleRadioButton.TabIndex = 6;
+            this.FemaleRadioButton.TabIndex = 8;
             this.FemaleRadioButton.TabStop = true;
             this.FemaleRadioButton.Text = "Female";
             this.FemaleRadioButton.UseVisualStyleBackColor = false;
@@ -532,7 +533,7 @@
             this.panel1.Location = new System.Drawing.Point(665, 408);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(192, 41);
-            this.panel1.TabIndex = 49;
+            this.panel1.TabIndex = 15;
             // 
             // VaccinePanel
             // 
@@ -542,7 +543,7 @@
             this.VaccinePanel.Location = new System.Drawing.Point(72, 500);
             this.VaccinePanel.Name = "VaccinePanel";
             this.VaccinePanel.Size = new System.Drawing.Size(187, 79);
-            this.VaccinePanel.TabIndex = 50;
+            this.VaccinePanel.TabIndex = 14;
             // 
             // NoVacRdioBut
             // 
@@ -552,7 +553,7 @@
             this.NoVacRdioBut.Location = new System.Drawing.Point(3, 47);
             this.NoVacRdioBut.Name = "NoVacRdioBut";
             this.NoVacRdioBut.Size = new System.Drawing.Size(118, 27);
-            this.NoVacRdioBut.TabIndex = 39;
+            this.NoVacRdioBut.TabIndex = 15;
             this.NoVacRdioBut.TabStop = true;
             this.NoVacRdioBut.Text = "No, I\'m not";
             this.NoVacRdioBut.UseVisualStyleBackColor = false;
@@ -565,7 +566,7 @@
             this.YesVacRdioBut.Location = new System.Drawing.Point(3, 5);
             this.YesVacRdioBut.Name = "YesVacRdioBut";
             this.YesVacRdioBut.Size = new System.Drawing.Size(174, 27);
-            this.YesVacRdioBut.TabIndex = 38;
+            this.YesVacRdioBut.TabIndex = 14;
             this.YesVacRdioBut.TabStop = true;
             this.YesVacRdioBut.Text = "Yes, I\'m vaccinated";
             this.YesVacRdioBut.UseVisualStyleBackColor = false;
@@ -576,7 +577,7 @@
             this.TimeOut.Location = new System.Drawing.Point(716, 249);
             this.TimeOut.Name = "TimeOut";
             this.TimeOut.Size = new System.Drawing.Size(142, 27);
-            this.TimeOut.TabIndex = 51;
+            this.TimeOut.TabIndex = 11;
             // 
             // StudentNumLbl
             // 
@@ -594,9 +595,23 @@
             this.StudentNumTxtbox.Location = new System.Drawing.Point(142, 209);
             this.StudentNumTxtbox.Name = "StudentNumTxtbox";
             this.StudentNumTxtbox.Size = new System.Drawing.Size(157, 27);
-            this.StudentNumTxtbox.TabIndex = 53;
+            this.StudentNumTxtbox.TabIndex = 2;
             this.StudentNumTxtbox.Text = "A.ID 0000-0000";
             this.StudentNumTxtbox.Click += new System.EventHandler(this.StudentNumTxtbox_Click);
+            // 
+            // AccessButton
+            // 
+            this.AccessButton.BackColor = System.Drawing.Color.Transparent;
+            this.AccessButton.BackgroundImage = global::Contact_Tracing_App.Properties.Resources.libroehe;
+            this.AccessButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.AccessButton.FlatAppearance.BorderSize = 0;
+            this.AccessButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AccessButton.Image = global::Contact_Tracing_App.Properties.Resources.libroehe;
+            this.AccessButton.Location = new System.Drawing.Point(43, 683);
+            this.AccessButton.Name = "AccessButton";
+            this.AccessButton.Size = new System.Drawing.Size(60, 54);
+            this.AccessButton.TabIndex = 53;
+            this.AccessButton.UseVisualStyleBackColor = false;
             // 
             // ContactTracingForm
             // 
@@ -606,6 +621,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(904, 741);
+            this.Controls.Add(this.AccessButton);
             this.Controls.Add(this.StudentNumTxtbox);
             this.Controls.Add(this.StudentNumLbl);
             this.Controls.Add(this.TimeOut);
@@ -722,5 +738,6 @@
         private DateTimePicker TimeOut;
         private Label StudentNumLbl;
         private TextBox StudentNumTxtbox;
+        private Button AccessButton;
     }
 }
