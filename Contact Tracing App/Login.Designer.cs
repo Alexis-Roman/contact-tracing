@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.SubmittButton = new System.Windows.Forms.Button();
             this.EmployeeLabel = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.IDTextbox = new System.Windows.Forms.TextBox();
             this.InfoLabel = new System.Windows.Forms.Label();
             this.AkademiPic = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.AkademiPic)).BeginInit();
@@ -59,12 +59,12 @@
             this.EmployeeLabel.TabIndex = 1;
             this.EmployeeLabel.Text = "Employee I.D #";
             // 
-            // textBox1
+            // IDTextbox
             // 
-            this.textBox1.Location = new System.Drawing.Point(136, 91);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(212, 27);
-            this.textBox1.TabIndex = 2;
+            this.IDTextbox.Location = new System.Drawing.Point(136, 91);
+            this.IDTextbox.Name = "IDTextbox";
+            this.IDTextbox.Size = new System.Drawing.Size(212, 27);
+            this.IDTextbox.TabIndex = 2;
             // 
             // InfoLabel
             // 
@@ -95,12 +95,13 @@
             this.ClientSize = new System.Drawing.Size(370, 176);
             this.Controls.Add(this.AkademiPic);
             this.Controls.Add(this.InfoLabel);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.IDTextbox);
             this.Controls.Add(this.EmployeeLabel);
             this.Controls.Add(this.SubmittButton);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "LoginForm";
-            this.Text = "Form2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Login";
             ((System.ComponentModel.ISupportInitialize)(this.AkademiPic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -111,7 +112,7 @@
 
         private Button SubmittButton;
         private Label EmployeeLabel;
-        private TextBox textBox1;
+        private TextBox IDTextbox;
         private Label InfoLabel;
         private PictureBox AkademiPic;
     }
