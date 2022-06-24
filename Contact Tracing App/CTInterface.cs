@@ -78,7 +78,6 @@ namespace Contact_Tracing_App
                     file.WriteLine("Sex: Female");
                 
                 file.WriteLine("Address: " + AddressTxtbox.Text);
-                file.WriteLine("");
 
                 //Visit info
                 file.WriteLine("VISIT INFORMATION");
@@ -86,7 +85,6 @@ namespace Contact_Tracing_App
                 file.WriteLine("Time in: " + TimeIn.Text);
                 file.WriteLine("Time out: " + TimeOut.Text);
                 file.WriteLine("Reason for visit: " + ReasonTxtbox.Text);
-                file.WriteLine("");
 
                 //Medical info
                 file.WriteLine("MEDICAL INFORMATION");
@@ -110,7 +108,6 @@ namespace Contact_Tracing_App
 
                 MessageBox.Show("Your information has been recorded. Keep safe!",
                       "Information Recorded", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                file.WriteLine("");
                 file.WriteLine("");
                 file.Close();
             }
