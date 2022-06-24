@@ -31,9 +31,9 @@
             this.FindButton = new System.Windows.Forms.Button();
             this.RecordLabel = new System.Windows.Forms.Label();
             this.FilteredLabel = new System.Windows.Forms.Label();
-            this.FilterTextBox = new System.Windows.Forms.TextBox();
-            this.RecordList = new System.Windows.Forms.ListBox();
             this.FindDatePicker = new System.Windows.Forms.DateTimePicker();
+            this.RecordTextBox = new System.Windows.Forms.TextBox();
+            this.FilterList = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // FindButton
@@ -64,25 +64,6 @@
             this.FilteredLabel.TabIndex = 6;
             this.FilteredLabel.Text = "Filtered according to date of visit";
             // 
-            // FilterTextBox
-            // 
-            this.FilterTextBox.Location = new System.Drawing.Point(26, 350);
-            this.FilterTextBox.Multiline = true;
-            this.FilterTextBox.Name = "FilterTextBox";
-            this.FilterTextBox.ReadOnly = true;
-            this.FilterTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.FilterTextBox.Size = new System.Drawing.Size(639, 174);
-            this.FilterTextBox.TabIndex = 7;
-            // 
-            // RecordList
-            // 
-            this.RecordList.FormattingEnabled = true;
-            this.RecordList.ItemHeight = 20;
-            this.RecordList.Location = new System.Drawing.Point(190, 55);
-            this.RecordList.Name = "RecordList";
-            this.RecordList.Size = new System.Drawing.Size(475, 264);
-            this.RecordList.TabIndex = 3;
-            // 
             // FindDatePicker
             // 
             this.FindDatePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
@@ -91,17 +72,36 @@
             this.FindDatePicker.Size = new System.Drawing.Size(131, 27);
             this.FindDatePicker.TabIndex = 10;
             // 
+            // RecordTextBox
+            // 
+            this.RecordTextBox.Location = new System.Drawing.Point(190, 57);
+            this.RecordTextBox.Multiline = true;
+            this.RecordTextBox.Name = "RecordTextBox";
+            this.RecordTextBox.ReadOnly = true;
+            this.RecordTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.RecordTextBox.Size = new System.Drawing.Size(475, 264);
+            this.RecordTextBox.TabIndex = 11;
+            // 
+            // FilterList
+            // 
+            this.FilterList.FormattingEnabled = true;
+            this.FilterList.ItemHeight = 20;
+            this.FilterList.Location = new System.Drawing.Point(26, 357);
+            this.FilterList.Name = "FilterList";
+            this.FilterList.Size = new System.Drawing.Size(639, 164);
+            this.FilterList.TabIndex = 12;
+            // 
             // RecordsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(688, 538);
+            this.Controls.Add(this.FilterList);
+            this.Controls.Add(this.RecordTextBox);
             this.Controls.Add(this.FindDatePicker);
-            this.Controls.Add(this.FilterTextBox);
             this.Controls.Add(this.FilteredLabel);
             this.Controls.Add(this.RecordLabel);
-            this.Controls.Add(this.RecordList);
             this.Controls.Add(this.FindButton);
             this.Name = "RecordsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -118,8 +118,8 @@
         private ListView InfoListView;
         private Label RecordLabel;
         private Label FilteredLabel;
-        private TextBox FilterTextBox;
-        private ListBox RecordList;
         private DateTimePicker FindDatePicker;
+        private TextBox RecordTextBox;
+        private ListBox FilterList;
     }
 }

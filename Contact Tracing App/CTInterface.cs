@@ -105,10 +105,8 @@ namespace Contact_Tracing_App
                     file.WriteLine(SymptomsTxtbox.Text);
                 }
 
-
                 MessageBox.Show("Your information has been recorded. Keep safe!",
                       "Information Recorded", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                file.WriteLine("");
                 file.Close();
             }
             
