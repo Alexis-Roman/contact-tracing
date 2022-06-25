@@ -45,22 +45,41 @@ namespace Contact_Tracing_App
             }
                 
              */
+            List<string> Fromtxtbox = new List<string>();
+            Fromtxtbox.Add(RecordTextBox.Text);
+
             string date;
             date = FindDatePicker.Text;
-            StreamReader CTrecord = new StreamReader(@"C:\Users\Nicole\Documents\ContactTracing.txt");
+            int position;
+            if (RecordTextBox.Text.Contains(date))
+            {
+                for (int i = 0; i < Fromtxtbox.Count; i++)
+                {
+                    if (Fromtxtbox[i].Contains("Name"))
+                    {
+                        position = i;
+                        MessageBox.Show(position.ToString());
+                    }
+                    else
+                    {
 
-            List<string> Filter = new List<string>();
-            Filter.Add(CTrecord.ReadToEnd());
-            
-            while (!CTrecord.EndOfStream)
-            {
-                FilterList.Items.Add(CTrecord.ReadLine());
+                    }
+
+                }
+
+
+
+
+                //position = RecordTextBox.GetCharIndexFromPosition[];
+                //MessageBox.Show(position.ToString());
+                //FilterList.Items.Add(RecordTextBox.Lines[1]);
+
             }
-            /*
-            if (FilterTextBox.Text.Contains(date))
+            else
             {
+                MessageBox.Show("No record for this date. Try another date.",
+                                      "Uhh oh!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            */
 
         }
 
@@ -77,16 +96,7 @@ namespace Contact_Tracing_App
                 RecordTextBox.Text = Records[i];
 
             }
-
-
-            /*
-            while (!CTrecord.EndOfStream)
-            {
-                RecordList.Items.Add(CTrecord.ReadLine());
-               
-                
-            }
-            */
+            
         }
     }
 }
