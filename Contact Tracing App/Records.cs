@@ -40,7 +40,8 @@ namespace Contact_Tracing_App
             if (yung date sa DATEPICKER is may kaparehas sa TEXTBOX)
             {
                 hanapin mo index nun sa TEXTBOX (NAHANAP KO NA)
-                index nung indexN-indexTEXTBOX
+                index nung indexN-indexTEXTBOX (NAGAWA KO NA DIN)
+                PERO NEED LAHAT NG NAMES NA SAME DATE (ITERATE DI KO PA SURE KUNG PANO)
                 Ilagay sa listbox as item yung line indexN (name dapat lalabas dito)(again idk how)
             }
                 
@@ -53,8 +54,23 @@ namespace Contact_Tracing_App
             int DateIndex = RecordTextBox.GetLineFromCharIndex(DateIndexFinder);
             int NameIndex = (DateIndex - 8);
 
-            MessageBox.Show(RecordTextBox.GetLineFromCharIndex(DateIndexFinder).ToString());
-            MessageBox.Show(RecordTextBox.Lines[(NameIndex)].ToString());
+            if (RecordTextBox.Text.Contains(date))
+            {
+                for (int lineindex = 10; lineindex < RecordTextBox.TextLength; lineindex =+ 17)
+                {
+                    if (RecordTextBox.Text.Contains(date))
+                        FilterList.Items.Add(RecordTextBox.Lines[(NameIndex)].ToString());
+
+                }
+                
+            }
+            else
+            {
+                MessageBox.Show("No record for this date. Try another date.",
+                                      "Uhh oh!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+                
         }
 
         private void RecordsForm_Load(object sender, EventArgs e)
