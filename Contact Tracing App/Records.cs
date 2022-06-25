@@ -39,7 +39,7 @@ namespace Contact_Tracing_App
 
             if (yung date sa DATEPICKER is may kaparehas sa TEXTBOX)
             {
-                hanapin mo index nun sa TEXTBOX
+                hanapin mo index nun sa TEXTBOX (NAHANAP KO NA)
                 index nung indexN-indexTEXTBOX
                 Ilagay sa listbox as item yung line indexN (name dapat lalabas dito)(again idk how)
             }
@@ -49,10 +49,12 @@ namespace Contact_Tracing_App
             date = FindDatePicker.Text;
 
             string FindDate = date;
-            int Index = RecordTextBox.Text.IndexOf("Date of Visit: " + FindDate);
+            int DateIndexFinder = RecordTextBox.Text.IndexOf("Date of Visit: " + FindDate);
+            int DateIndex = RecordTextBox.GetLineFromCharIndex(DateIndexFinder);
+            int NameIndex = (DateIndex - 8);
 
-            MessageBox.Show(RecordTextBox.GetLineFromCharIndex(Index).ToString());
-            MessageBox.Show(RecordTextBox.Lines[45].ToString());
+            MessageBox.Show(RecordTextBox.GetLineFromCharIndex(DateIndexFinder).ToString());
+            MessageBox.Show(RecordTextBox.Lines[(NameIndex)].ToString());
         }
 
         private void RecordsForm_Load(object sender, EventArgs e)
