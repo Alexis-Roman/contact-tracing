@@ -45,41 +45,10 @@ namespace Contact_Tracing_App
             }
                 
              */
-            List<string> Fromtxtbox = new List<string>();
-            Fromtxtbox.Add(RecordTextBox.Text);
+            string FindDate = "Date";
+            int Index = RecordTextBox.Text.IndexOf(FindDate);
 
-            string date;
-            date = FindDatePicker.Text;
-            int position;
-            if (RecordTextBox.Text.Contains(date))
-            {
-                for (int i = 0; i < Fromtxtbox.Count; i++)
-                {
-                    if (Fromtxtbox[i].Contains("Name"))
-                    {
-                        position = i;
-                        MessageBox.Show(position.ToString());
-                    }
-                    else
-                    {
-
-                    }
-
-                }
-
-
-
-
-                //position = RecordTextBox.GetCharIndexFromPosition[];
-                //MessageBox.Show(position.ToString());
-                //FilterList.Items.Add(RecordTextBox.Lines[1]);
-
-            }
-            else
-            {
-                MessageBox.Show("No record for this date. Try another date.",
-                                      "Uhh oh!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
+            MessageBox.Show(RecordTextBox.GetLineFromCharIndex(Index).ToString());
 
         }
 
@@ -94,6 +63,7 @@ namespace Contact_Tracing_App
             for (int i = 0; i < Records.Count; i++)
             {
                 RecordTextBox.Text = Records[i];
+                
 
             }
             
