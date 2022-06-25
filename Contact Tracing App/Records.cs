@@ -45,11 +45,14 @@ namespace Contact_Tracing_App
             }
                 
              */
-            string FindDate = "Date";
-            int Index = RecordTextBox.Text.IndexOf(FindDate);
+            string date;
+            date = FindDatePicker.Text;
+
+            string FindDate = date;
+            int Index = RecordTextBox.Text.IndexOf("Date of Visit: " + FindDate);
 
             MessageBox.Show(RecordTextBox.GetLineFromCharIndex(Index).ToString());
-
+            MessageBox.Show(RecordTextBox.Lines[45].ToString());
         }
 
         private void RecordsForm_Load(object sender, EventArgs e)
