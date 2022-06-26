@@ -85,7 +85,6 @@ namespace Contact_Tracing_App
             for (int i = 0; i < Records.Count; i++)
             {
                 RecordTextBox.Text = Records[i];
-                
 
             }
             
@@ -93,12 +92,12 @@ namespace Contact_Tracing_App
 
         private void InspectButton_Click(object sender, EventArgs e)
         {
-            if(FilterList.SelectedItem != null)
+            if (FilterList.SelectedItem != null)
             {
                 string SelectedName = FilterList.SelectedItem.ToString();
                 int NameIndexFinder = RecordTextBox.Text.IndexOf(SelectedName);
                 int NameIndex = RecordTextBox.GetLineFromCharIndex(NameIndexFinder);
-                MessageBox.Show(NameIndex.ToString());
+                DetailsTextBox.Text = RecordTextBox.Lines[NameIndex];
 
 
             }
@@ -107,6 +106,11 @@ namespace Contact_Tracing_App
                 MessageBox.Show("Don't forget to select a name.",
                                "Uhh oh!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+
+        }
+
+        private void FilteredLabel_Click(object sender, EventArgs e)
+        {
 
         }
     }
