@@ -101,8 +101,7 @@ namespace Contact_Tracing_App
                     file.WriteLine("Status: No symptoms of COVID-19");
                 else if (YesFluRdioBut.Checked)
                 {
-                    file.WriteLine("Symptoms : ");
-                    file.WriteLine(SymptomsTxtbox.Text);
+                    file.WriteLine("Symptoms : " + SymptomsTxtbox.Text);
                 }
                 file.WriteLine("");
                 MessageBox.Show("Your information has been recorded. Keep safe!",
