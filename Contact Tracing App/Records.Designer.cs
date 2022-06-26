@@ -41,7 +41,7 @@
             // 
             // FindButton
             // 
-            this.FindButton.Location = new System.Drawing.Point(534, 110);
+            this.FindButton.Location = new System.Drawing.Point(616, 110);
             this.FindButton.Name = "FindButton";
             this.FindButton.Size = new System.Drawing.Size(94, 29);
             this.FindButton.TabIndex = 2;
@@ -61,7 +61,7 @@
             // NamesLabel
             // 
             this.NamesLabel.AutoSize = true;
-            this.NamesLabel.Location = new System.Drawing.Point(394, 160);
+            this.NamesLabel.Location = new System.Drawing.Point(476, 160);
             this.NamesLabel.Name = "NamesLabel";
             this.NamesLabel.Size = new System.Drawing.Size(119, 20);
             this.NamesLabel.TabIndex = 6;
@@ -71,7 +71,7 @@
             // FindDatePicker
             // 
             this.FindDatePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.FindDatePicker.Location = new System.Drawing.Point(394, 112);
+            this.FindDatePicker.Location = new System.Drawing.Point(476, 112);
             this.FindDatePicker.Name = "FindDatePicker";
             this.FindDatePicker.Size = new System.Drawing.Size(131, 27);
             this.FindDatePicker.TabIndex = 10;
@@ -83,21 +83,21 @@
             this.RecordTextBox.Name = "RecordTextBox";
             this.RecordTextBox.ReadOnly = true;
             this.RecordTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.RecordTextBox.Size = new System.Drawing.Size(352, 328);
+            this.RecordTextBox.Size = new System.Drawing.Size(430, 328);
             this.RecordTextBox.TabIndex = 11;
             // 
             // FilterList
             // 
             this.FilterList.FormattingEnabled = true;
             this.FilterList.ItemHeight = 20;
-            this.FilterList.Location = new System.Drawing.Point(394, 196);
+            this.FilterList.Location = new System.Drawing.Point(476, 196);
             this.FilterList.Name = "FilterList";
             this.FilterList.Size = new System.Drawing.Size(270, 244);
             this.FilterList.TabIndex = 12;
             // 
             // InspectButton
             // 
-            this.InspectButton.Location = new System.Drawing.Point(534, 156);
+            this.InspectButton.Location = new System.Drawing.Point(616, 156);
             this.InspectButton.Name = "InspectButton";
             this.InspectButton.Size = new System.Drawing.Size(94, 29);
             this.InspectButton.TabIndex = 13;
@@ -112,7 +112,7 @@
             this.DetailsTextBox.Name = "DetailsTextBox";
             this.DetailsTextBox.ReadOnly = true;
             this.DetailsTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.DetailsTextBox.Size = new System.Drawing.Size(638, 149);
+            this.DetailsTextBox.Size = new System.Drawing.Size(720, 149);
             this.DetailsTextBox.TabIndex = 14;
             // 
             // DetailsLabel
@@ -129,7 +129,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ClientSize = new System.Drawing.Size(688, 640);
+            this.ClientSize = new System.Drawing.Size(772, 640);
             this.Controls.Add(this.DetailsLabel);
             this.Controls.Add(this.DetailsTextBox);
             this.Controls.Add(this.InspectButton);
