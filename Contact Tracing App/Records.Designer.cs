@@ -34,6 +34,7 @@
             this.FindDatePicker = new System.Windows.Forms.DateTimePicker();
             this.RecordTextBox = new System.Windows.Forms.TextBox();
             this.FilterList = new System.Windows.Forms.ListBox();
+            this.InspectButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // FindButton
@@ -58,7 +59,7 @@
             // FilteredLabel
             // 
             this.FilteredLabel.AutoSize = true;
-            this.FilteredLabel.Location = new System.Drawing.Point(26, 326);
+            this.FilteredLabel.Location = new System.Drawing.Point(26, 329);
             this.FilteredLabel.Name = "FilteredLabel";
             this.FilteredLabel.Size = new System.Drawing.Size(229, 20);
             this.FilteredLabel.TabIndex = 6;
@@ -91,12 +92,23 @@
             this.FilterList.Size = new System.Drawing.Size(639, 164);
             this.FilterList.TabIndex = 12;
             // 
+            // InspectButton
+            // 
+            this.InspectButton.Location = new System.Drawing.Point(571, 531);
+            this.InspectButton.Name = "InspectButton";
+            this.InspectButton.Size = new System.Drawing.Size(94, 29);
+            this.InspectButton.TabIndex = 13;
+            this.InspectButton.Text = "Inspect";
+            this.InspectButton.UseVisualStyleBackColor = true;
+            this.InspectButton.Click += new System.EventHandler(this.InspectButton_Click);
+            // 
             // RecordsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ClientSize = new System.Drawing.Size(688, 538);
+            this.ClientSize = new System.Drawing.Size(688, 567);
+            this.Controls.Add(this.InspectButton);
             this.Controls.Add(this.FilterList);
             this.Controls.Add(this.RecordTextBox);
             this.Controls.Add(this.FindDatePicker);
@@ -104,7 +116,7 @@
             this.Controls.Add(this.RecordLabel);
             this.Controls.Add(this.FindButton);
             this.Name = "RecordsForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Contact Tracing Records";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.RecordsForm_Load);
@@ -121,5 +133,6 @@
         private DateTimePicker FindDatePicker;
         private TextBox RecordTextBox;
         private ListBox FilterList;
+        private Button InspectButton;
     }
 }

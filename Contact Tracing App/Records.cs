@@ -42,7 +42,7 @@ namespace Contact_Tracing_App
             {
                 hanapin mo index nun sa TEXTBOX (NAHANAP KO NA)
                 index nung indexN-indexTEXTBOX (NAGAWA KO NA DIN)
-                PERO NEED LAHAT NG NAMES NA SAME DATE (ITERATE DI KO PA SURE KUNG PANO)
+                PERO NEED LAHAT NG NAMES NA SAME DATE (OKEEE NA)
                 Ilagay sa listbox as item yung line indexN (name dapat lalabas dito)(again idk how)
             }
                 
@@ -60,12 +60,11 @@ namespace Contact_Tracing_App
             {
                 while(DateOfVisit.Contains(Date) && DateIndex < LineCount)
                 {
+                    //dagdagan yung date index ng +18 then pag yung line na yun contains date of visit + date
                     int NameIndex = (DateIndex - 8);
                     FilterList.Items.Add(RecordTextBox.Lines[(NameIndex)].ToString());
                     DateIndex += 18;
-                    //dagdagan yung date index ng +18 then pag yung line na yun contains date of visit + date
-                    MessageBox.Show(DateIndex.ToString());
-                    
+               
                 }
 
             }
@@ -90,6 +89,16 @@ namespace Contact_Tracing_App
 
             }
             
+        }
+
+        private void InspectButton_Click(object sender, EventArgs e)
+        {
+            if(FilterList.SelectedItem != null)
+            {
+                string SelectedName = FilterList.SelectedItem.ToString();
+                MessageBox.Show(SelectedName);
+            }
+
         }
     }
 }
