@@ -97,11 +97,10 @@ namespace Contact_Tracing_App
                 string SelectedName = FilterList.SelectedItem.ToString();
                 int NameIndexFinder = RecordTextBox.Text.IndexOf(SelectedName);
                 int NameIndex = RecordTextBox.GetLineFromCharIndex(NameIndexFinder);
+               
                 var Source = RecordTextBox.Lines;
                 var Details = Source.Take(NameIndex +17);
                 DetailsTextBox.Text = String.Join(Environment.NewLine,Details.Skip(NameIndex));
-                
-
 
             }
             else
