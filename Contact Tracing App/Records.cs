@@ -96,7 +96,16 @@ namespace Contact_Tracing_App
             if(FilterList.SelectedItem != null)
             {
                 string SelectedName = FilterList.SelectedItem.ToString();
-                MessageBox.Show(SelectedName);
+                int NameIndexFinder = RecordTextBox.Text.IndexOf(SelectedName);
+                int NameIndex = RecordTextBox.GetLineFromCharIndex(NameIndexFinder);
+                MessageBox.Show(NameIndex.ToString());
+
+
+            }
+            else
+            {
+                MessageBox.Show("Don't forget to select a name.",
+                               "Uhh oh!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
         }
