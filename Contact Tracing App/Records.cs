@@ -14,6 +14,7 @@ namespace Contact_Tracing_App
     {
         public RecordsForm()
         {
+
             InitializeComponent();
         }
 
@@ -46,29 +47,32 @@ namespace Contact_Tracing_App
             }
                 
              */
-            string date;
-            date = FindDatePicker.Text;
-
-            string FindDate = date;
-            int DateIndexFinder = RecordTextBox.Text.IndexOf("Date of Visit: " + FindDate);
+            string Date;
+            Date = ("Date of Visit: " + FindDatePicker.Text);
+            int LineCount = File.ReadAllLines(@"C:\Users\Nicole\Documents\ContactTracing.txt").Length;
+            int DateIndexFinder = RecordTextBox.Text.IndexOf(Date);
             int DateIndex = RecordTextBox.GetLineFromCharIndex(DateIndexFinder);
-            int NameIndex = (DateIndex - 8);
+            
 
-            if (RecordTextBox.Text.Contains(date))
+            string DateOfVisit = RecordTextBox.Lines[(DateIndex)].ToString();
+
+            if (RecordTextBox.Text.Contains(Date))
             {
-                for (int lineindex = 10; lineindex < RecordTextBox.TextLength; lineindex =+ 17)
+                while(DateOfVisit.Contains(Date) && DateIndex < LineCount)
                 {
-                    if (RecordTextBox.Text.Contains(date))
-                        FilterList.Items.Add(RecordTextBox.Lines[(NameIndex)].ToString());
-
+                    int NameIndex = (DateIndex - 8);
+                    FilterList.Items.Add(RecordTextBox.Lines[(NameIndex)].ToString());
+                    DateIndex += 18;
+                    //dagdagan yung date index ng +18 then pag yung line na yun contains date of visit + date
+                    MessageBox.Show(DateIndex.ToString());
+                    
                 }
-                
+
             }
             else
             {
                 MessageBox.Show("No record for this date. Try another date.",
-                                      "Uhh oh!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                               "Uhh oh!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
                 
         }
@@ -79,8 +83,6 @@ namespace Contact_Tracing_App
 
             List<string> Records = new List<string>();
             Records.Add(CTrecord.ReadToEnd());
-
-
             for (int i = 0; i < Records.Count; i++)
             {
                 RecordTextBox.Text = Records[i];
