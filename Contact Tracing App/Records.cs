@@ -25,47 +25,32 @@ namespace Contact_Tracing_App
 
         private void FindButton_Click(object sender, EventArgs e)
         {
-            /*
-             Since di talaga gumana lahat ng ni try ko para sa pag filter 
-             pseudo code muna...
-
-            DIBAAAAA may laman yung textbox ko na record ng students
-            sooo... yung laman nun at yung naka input sa sa DatePicker
-            icocompare ko then hahanapin nya same na value nun
-            THENNN kung same value, hahanapin ko index nya?(yung position nya sa line)
-            after nun need ko palabasin dun sa list yung NAME ng student na nagvisit sa school
-            So... (index-n) siguro n = kung gano kalayo yung index ng date sa index ng name. (ewan ko lang kung may code ba na ganito)
-            After lumitaw nung name ng nag visit... dapat pag nipindot yun LALABAS LAHAT NG INFO 
-            TUNGKOL SA KANYA SA MESSAGE BOX (idk how).
-
-            if (yung date sa DATEPICKER is may kaparehas sa TEXTBOX)
-            {
-                hanapin mo index nun sa TEXTBOX (NAHANAP KO NA)
-                index nung indexN-indexTEXTBOX (NAGAWA KO NA DIN)
-                PERO NEED LAHAT NG NAMES NA SAME DATE (OKEEE NA)
-                Ilagay sa listbox as item yung line indexN (name dapat lalabas dito)(again idk how)
-            }
-                
-             */
+          
             string Date;
             Date = ("Date of Visit: " + FindDatePicker.Text);
             int LineCount = File.ReadAllLines(@"C:\Users\Nicole\Documents\ContactTracing.txt").Length;
             int DateIndexFinder = RecordTextBox.Text.IndexOf(Date);
             int DateIndex = RecordTextBox.GetLineFromCharIndex(DateIndexFinder);
-            
-
             string DateOfVisit = RecordTextBox.Lines[(DateIndex)].ToString();
+
+
 
             if (RecordTextBox.Text.Contains(Date))
             {
-                while(DateOfVisit.Contains(Date) && DateIndex < LineCount)
+                
+                while (DateOfVisit.Contains(Date) && DateIndex < LineCount)
                 {
-                    //dagdagan yung date index ng +18 then pag yung line na yun contains date of visit + date
                     int NameIndex = (DateIndex - 8);
                     FilterList.Items.Add(RecordTextBox.Lines[(NameIndex)].ToString());
                     DateIndex += 18;
-               
+                    if(DateIndex < LineCount)
+                    {
+                        DateOfVisit = RecordTextBox.Lines[(DateIndex)].ToString();
+                    }
+                   else
+                    { }
                 }
+                
 
             }
             else
@@ -73,7 +58,8 @@ namespace Contact_Tracing_App
                 MessageBox.Show("No record for this date. Try another date.",
                                "Uhh oh!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-                
+            
+
         }
 
         private void RecordsForm_Load(object sender, EventArgs e)
@@ -114,6 +100,11 @@ namespace Contact_Tracing_App
         private void FilteredLabel_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void ResetButton_Click(object sender, EventArgs e)
+        {
+            FilterList.Items.Clear();
         }
     }
 }

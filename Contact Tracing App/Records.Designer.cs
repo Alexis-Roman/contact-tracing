@@ -42,6 +42,7 @@
             this.Logo1PicBox = new System.Windows.Forms.PictureBox();
             this.LogoPicBox = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ResetButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.TitlePicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Logo1PicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LogoPicBox)).BeginInit();
@@ -114,6 +115,7 @@
             this.FilterList.ItemHeight = 20;
             this.FilterList.Location = new System.Drawing.Point(476, 236);
             this.FilterList.Name = "FilterList";
+            this.FilterList.ScrollAlwaysVisible = true;
             this.FilterList.Size = new System.Drawing.Size(270, 244);
             this.FilterList.TabIndex = 12;
             // 
@@ -198,12 +200,30 @@
             this.pictureBox1.TabIndex = 19;
             this.pictureBox1.TabStop = false;
             // 
+            // ResetButton
+            // 
+            this.ResetButton.BackColor = System.Drawing.Color.Transparent;
+            this.ResetButton.BackgroundImage = global::Contact_Tracing_App.Properties.Resources.img_106832;
+            this.ResetButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ResetButton.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.ResetButton.FlatAppearance.BorderSize = 0;
+            this.ResetButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ResetButton.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ResetButton.ForeColor = System.Drawing.Color.White;
+            this.ResetButton.Location = new System.Drawing.Point(725, 150);
+            this.ResetButton.Name = "ResetButton";
+            this.ResetButton.Size = new System.Drawing.Size(35, 29);
+            this.ResetButton.TabIndex = 20;
+            this.ResetButton.UseVisualStyleBackColor = false;
+            this.ResetButton.Click += new System.EventHandler(this.ResetButton_Click);
+            // 
             // RecordsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
             this.ClientSize = new System.Drawing.Size(772, 688);
+            this.Controls.Add(this.ResetButton);
             this.Controls.Add(this.LogoPicBox);
             this.Controls.Add(this.Logo1PicBox);
             this.Controls.Add(this.TitlePicBox);
@@ -246,5 +266,6 @@
         private PictureBox Logo1PicBox;
         private PictureBox LogoPicBox;
         private PictureBox pictureBox1;
+        private Button ResetButton;
     }
 }
