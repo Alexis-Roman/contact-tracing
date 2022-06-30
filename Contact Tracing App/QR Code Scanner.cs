@@ -18,7 +18,7 @@ namespace Contact_Tracing_App
     
     public partial class QR_Code_Scanner : Form
     {
-        
+        public string QRCodeText;
         public QR_Code_Scanner()
         {
             InitializeComponent();
@@ -33,7 +33,6 @@ namespace Contact_Tracing_App
                 CamComboBox.Items.Add(filterInfo.Name);
             }
             CamComboBox.SelectedIndex = 0;
-            captureDevice = new VideoCaptureDevice();
 
         }
 
@@ -46,10 +45,9 @@ namespace Contact_Tracing_App
         {
             captureDevice = new VideoCaptureDevice(filterInfoCollection
                 [CamComboBox.SelectedIndex].MonikerString);
-            captureDevice.NewFrame += new NewFrameEventHandler(CaptureDevice_NewFrame);
+            captureDevice.NewFrame += CaptureDevice_NewFrame;
             captureDevice.Start();
-            
-
+            TickTimer.Start();
 
         }
 
@@ -68,41 +66,40 @@ namespace Contact_Tracing_App
 
         private void TickTimer_Tick(object sender, EventArgs e)
         {
-            BarcodeReader barcodeReader = new BarcodeReader();
-            Result result = barcodeReader.Decode((Bitmap) ScannerPictureBox.Image);
             
-                string QRCodeText = result.ToString().Trim();
-                if(QRCodeText != "")
+            
+             if(ScannerPictureBox.Image != null)
                 {
-                    textBox1.Text = QRCodeText;
+               
+                BarcodeReader barcodeReader = new BarcodeReader();
+                Result result = barcodeReader.Decode((Bitmap)ScannerPictureBox.Image);
+                if(result != null)
+                    {
+                    QRCodeText = result.Text;
+                    //textBox1.Text = result.ToString();
+                    //TickTimer.Stop();
+                    //if(captureDevice.IsRunning)
+                    StreamWriter file = new StreamWriter(@"C:\Users\Nicole\Documents\QRCodeText.txt");
+                    this.Close();
                 }
-                
-          
+                    
+                }
+
             else 
             {
 
             }
-            
-            /*
-            if (result != null)
-                {
-                    textBox1.Text = result.ToString();
-                    TickTimer.Stop();
-
-                    if (captureDevice.IsRunning)
-                    {
-                        captureDevice.Stop();
-                    }
-
-                }
-            */
-            
-            
+ 
         }
 
         private void ReadButton_Click(object sender, EventArgs e)
         {
-            TickTimer.Start();
+
+        }
+
+        private void QR_Code_Scanner_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            
         }
     }
 }

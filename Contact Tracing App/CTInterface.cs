@@ -12,12 +12,7 @@ namespace Contact_Tracing_App
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
+            
         }
 
         private void LogoPicBox_Click(object sender, EventArgs e)
@@ -197,6 +192,16 @@ namespace Contact_Tracing_App
         {
             QR_Code_Scanner qR_Code_Scanner = new QR_Code_Scanner();
             qR_Code_Scanner.Show();
+        }
+
+        private void QRButton_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NameTxtbox_TextChanged(object sender, EventArgs e)
+        {
+      
         }
     }
 }

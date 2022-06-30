@@ -79,6 +79,7 @@
             this.StudentNumTxtbox = new System.Windows.Forms.TextBox();
             this.AccessButton = new System.Windows.Forms.Button();
             this.QRButton = new System.Windows.Forms.Button();
+            this.AutofillButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.LogoPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AkademiPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MedLogo)).BeginInit();
@@ -144,6 +145,7 @@
             this.NameTxtbox.TabIndex = 1;
             this.NameTxtbox.Text = "(Given, M.I, Last)";
             this.NameTxtbox.Click += new System.EventHandler(this.NameTxtbox_Click);
+            this.NameTxtbox.TextChanged += new System.EventHandler(this.NameTxtbox_TextChanged);
             // 
             // PersoInfoPicbox
             // 
@@ -620,13 +622,26 @@
             this.QRButton.BackColor = System.Drawing.Color.DarkOliveGreen;
             this.QRButton.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.QRButton.ForeColor = System.Drawing.Color.White;
-            this.QRButton.Location = new System.Drawing.Point(745, 89);
+            this.QRButton.Location = new System.Drawing.Point(745, 47);
             this.QRButton.Name = "QRButton";
             this.QRButton.Size = new System.Drawing.Size(146, 36);
             this.QRButton.TabIndex = 54;
             this.QRButton.Text = "Scan QR code";
             this.QRButton.UseVisualStyleBackColor = false;
             this.QRButton.Click += new System.EventHandler(this.QRButton_Click);
+            this.QRButton.Enter += new System.EventHandler(this.QRButton_Enter);
+            // 
+            // AutofillButton
+            // 
+            this.AutofillButton.BackColor = System.Drawing.Color.LightCoral;
+            this.AutofillButton.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AutofillButton.ForeColor = System.Drawing.Color.White;
+            this.AutofillButton.Location = new System.Drawing.Point(745, 89);
+            this.AutofillButton.Name = "AutofillButton";
+            this.AutofillButton.Size = new System.Drawing.Size(146, 36);
+            this.AutofillButton.TabIndex = 55;
+            this.AutofillButton.Text = "Autofill";
+            this.AutofillButton.UseVisualStyleBackColor = false;
             // 
             // CTInterfaceForm
             // 
@@ -636,6 +651,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(929, 741);
+            this.Controls.Add(this.AutofillButton);
             this.Controls.Add(this.QRButton);
             this.Controls.Add(this.AccessButton);
             this.Controls.Add(this.StudentNumTxtbox);
@@ -756,5 +772,6 @@
         private TextBox StudentNumTxtbox;
         private Button AccessButton;
         private Button QRButton;
+        private Button AutofillButton;
     }
 }

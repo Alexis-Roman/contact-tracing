@@ -34,8 +34,6 @@
             this.ScanButton = new System.Windows.Forms.Button();
             this.ScannerPictureBox = new System.Windows.Forms.PictureBox();
             this.TickTimer = new System.Windows.Forms.Timer(this.components);
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.ReadButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ScannerPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -83,41 +81,19 @@
             // 
             this.TickTimer.Tick += new System.EventHandler(this.TickTimer_Tick);
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(455, 101);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(334, 328);
-            this.textBox1.TabIndex = 23;
-            // 
-            // ReadButton
-            // 
-            this.ReadButton.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.ReadButton.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ReadButton.ForeColor = System.Drawing.Color.White;
-            this.ReadButton.Location = new System.Drawing.Point(553, 443);
-            this.ReadButton.Name = "ReadButton";
-            this.ReadButton.Size = new System.Drawing.Size(178, 44);
-            this.ReadButton.TabIndex = 24;
-            this.ReadButton.Text = "Read";
-            this.ReadButton.UseVisualStyleBackColor = false;
-            this.ReadButton.Click += new System.EventHandler(this.ReadButton_Click);
-            // 
             // QR_Code_Scanner
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(825, 499);
-            this.Controls.Add(this.ReadButton);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(447, 499);
             this.Controls.Add(this.ScannerPictureBox);
             this.Controls.Add(this.ScanButton);
             this.Controls.Add(this.QRLbl);
             this.Controls.Add(this.CamComboBox);
             this.Name = "QR_Code_Scanner";
             this.Text = "QR_Code_Scanner";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.QR_Code_Scanner_FormClosed);
             this.Load += new System.EventHandler(this.QR_Code_Scanner_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ScannerPictureBox)).EndInit();
             this.ResumeLayout(false);
@@ -132,7 +108,5 @@
         private Button ScanButton;
         private PictureBox ScannerPictureBox;
         private System.Windows.Forms.Timer TickTimer;
-        private TextBox textBox1;
-        private Button ReadButton;
     }
 }
