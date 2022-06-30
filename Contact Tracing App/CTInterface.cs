@@ -211,11 +211,25 @@ namespace Contact_Tracing_App
             QRCTextList.Add(QRCodeText.ReadToEnd());
             for (int i = 0; i < QRCTextList.Count; i++)
             {
-                
-                    ScannedInfo= QRCTextList[i];
-
+                    ScannedInfo = QRCTextList[i];
             }
-            MessageBox.Show(ScannedInfo.ToString());
+            //NameTxtbox.Text = String.Line(QRCTextList[1]);
+            //NameTxtbox.Text = ScannedInfo.IndexOf("Name:").ToString();
+            //NameTxtbox.Text = ScannedInfo.ElementAt(0).ToString()z;
+            QRTxtbox.Text = ScannedInfo;
+            NameTxtbox.Text = QRTxtbox.Lines[0];
+            StudentNumTxtbox.Text = QRTxtbox.Lines[1];
+            ContTxtbox.Text = QRTxtbox.Lines[2];
+            AgeTxtbox.Text = QRTxtbox.Lines[3];
+            BdayDate.Text = QRTxtbox.Lines[4];
+            if (QRTxtbox.Text.Contains("Female"))
+            {
+                FemaleRadioButton.Checked = true;
+            }
+            else
+                MaleRadioButton.Checked = true;
+                
+            //MessageBox.Show(ScannedInfo);
         }
     }
 }

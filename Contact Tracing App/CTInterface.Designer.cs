@@ -80,6 +80,7 @@
             this.AccessButton = new System.Windows.Forms.Button();
             this.QRButton = new System.Windows.Forms.Button();
             this.AutofillButton = new System.Windows.Forms.Button();
+            this.QRTxtbox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.LogoPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AkademiPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MedLogo)).BeginInit();
@@ -643,6 +644,17 @@
             this.AutofillButton.UseVisualStyleBackColor = false;
             this.AutofillButton.Click += new System.EventHandler(this.AutofillButton_Click);
             // 
+            // QRTxtbox
+            // 
+            this.QRTxtbox.HideSelection = false;
+            this.QRTxtbox.Location = new System.Drawing.Point(405, 498);
+            this.QRTxtbox.Multiline = true;
+            this.QRTxtbox.Name = "QRTxtbox";
+            this.QRTxtbox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.QRTxtbox.Size = new System.Drawing.Size(464, 78);
+            this.QRTxtbox.TabIndex = 56;
+            this.QRTxtbox.Visible = false;
+            // 
             // CTInterfaceForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -665,14 +677,12 @@
             this.Controls.Add(this.SubmitButton);
             this.Controls.Add(this.TemperatureTxtBox);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.SymptomsTxtbox);
             this.Controls.Add(this.ConcentChkbox);
             this.Controls.Add(this.YesLbl);
             this.Controls.Add(this.ConsentLbl);
             this.Controls.Add(this.FluLbl);
             this.Controls.Add(this.VaccineLbl);
             this.Controls.Add(this.MedInfoLbl);
-            this.Controls.Add(this.MedInfoPicbox);
             this.Controls.Add(this.ReasonTxtbox);
             this.Controls.Add(this.ResonLbl);
             this.Controls.Add(this.TimeIn);
@@ -696,6 +706,9 @@
             this.Controls.Add(this.MedLogo);
             this.Controls.Add(this.AkademiPic);
             this.Controls.Add(this.PersoInfoPicbox);
+            this.Controls.Add(this.SymptomsTxtbox);
+            this.Controls.Add(this.QRTxtbox);
+            this.Controls.Add(this.MedInfoPicbox);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
@@ -773,5 +786,6 @@
         private Button AccessButton;
         private Button QRButton;
         private Button AutofillButton;
+        private TextBox QRTxtbox;
     }
 }
