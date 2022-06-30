@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "jzbw/8TJ8eEFFvittcTXRR4WiO8uqB/XPy+0SagfBla/PMVQuSf4Fh+Iv3GRPvmukoxDaBXLrHc2CEXT+xPSng==",
+  "dgSpecHash": "nEWUkRq+08Cd7l6WW53lRcmXyn3HT9/ALhAXjTxKH3zgoZ2+5tW5IFhL4eLQlOQfPV14+RSdwfAXjTS08wSaYA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Nicole\\source\\repos\\Contact Tracing App\\Contact Tracing App\\Contact Tracing App.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nicole\\.nuget\\packages\\aforge\\2.2.5\\aforge.2.2.5.nupkg.sha512",
     "C:\\Users\\Nicole\\.nuget\\packages\\aforge.video\\2.2.5\\aforge.video.2.2.5.nupkg.sha512",
     "C:\\Users\\Nicole\\.nuget\\packages\\aforge.video.directshow\\2.2.5\\aforge.video.directshow.2.2.5.nupkg.sha512",
-    "C:\\Users\\Nicole\\.nuget\\packages\\zxing.net\\0.16.8\\zxing.net.0.16.8.nupkg.sha512"
+    "C:\\Users\\Nicole\\.nuget\\packages\\zxing.net\\0.16.6\\zxing.net.0.16.6.nupkg.sha512"
   ],
   "logs": [
     {

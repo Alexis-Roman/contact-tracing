@@ -7,14 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AForge;
 using AForge.Video;
 using AForge.Video.DirectShow;
 using ZXing;
+using ZXing.Aztec;
 
 namespace Contact_Tracing_App
 {
+    
     public partial class QR_Code_Scanner : Form
     {
+        
         public QR_Code_Scanner()
         {
             InitializeComponent();
@@ -29,6 +33,7 @@ namespace Contact_Tracing_App
                 CamComboBox.Items.Add(filterInfo.Name);
             }
             CamComboBox.SelectedIndex = 0;
+            captureDevice = new VideoCaptureDevice();
 
         }
 
@@ -41,9 +46,10 @@ namespace Contact_Tracing_App
         {
             captureDevice = new VideoCaptureDevice(filterInfoCollection
                 [CamComboBox.SelectedIndex].MonikerString);
-            captureDevice.NewFrame += CaptureDevice_NewFrame;
+            captureDevice.NewFrame += new NewFrameEventHandler(CaptureDevice_NewFrame);
             captureDevice.Start();
-            TickTimer.Start();
+            
+
 
         }
 
@@ -54,7 +60,7 @@ namespace Contact_Tracing_App
 
         private void QR_Code_Scanner_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (captureDevice.IsRunning)
+            if (captureDevice.IsRunning == true)
             {
                 captureDevice.Stop();
             }
@@ -62,24 +68,41 @@ namespace Contact_Tracing_App
 
         private void TickTimer_Tick(object sender, EventArgs e)
         {
-            /*
-            if (ScannerPictureBox.Image != null)
+            BarcodeReader barcodeReader = new BarcodeReader();
+            Result result = barcodeReader.Decode((Bitmap) ScannerPictureBox.Image);
+            
+                string QRCodeText = result.ToString().Trim();
+                if(QRCodeText != "")
+                {
+                    textBox1.Text = QRCodeText;
+                }
+                
+          
+            else 
             {
-                BarcodeReaderGeneric barcodeReader = new BarcodeReaderGeneric();
-                Result result = barcodeReader.Decode((Bitmap).);
-                if(result != null)
+
+            }
+            
+            /*
+            if (result != null)
                 {
                     textBox1.Text = result.ToString();
                     TickTimer.Stop();
+
                     if (captureDevice.IsRunning)
                     {
                         captureDevice.Stop();
                     }
 
                 }
-            
-            }
             */
+            
+            
+        }
+
+        private void ReadButton_Click(object sender, EventArgs e)
+        {
+            TickTimer.Start();
         }
     }
 }
