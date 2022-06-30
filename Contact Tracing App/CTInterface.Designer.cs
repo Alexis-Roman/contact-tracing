@@ -95,7 +95,7 @@
             this.LogoPicBox.BackColor = System.Drawing.Color.Transparent;
             this.LogoPicBox.BackgroundImage = global::Contact_Tracing_App.Properties.Resources.static_assets_upload9291112882646985227;
             this.LogoPicBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.LogoPicBox.Location = new System.Drawing.Point(158, 12);
+            this.LogoPicBox.Location = new System.Drawing.Point(169, 14);
             this.LogoPicBox.Name = "LogoPicBox";
             this.LogoPicBox.Size = new System.Drawing.Size(101, 107);
             this.LogoPicBox.TabIndex = 1;
@@ -107,7 +107,7 @@
             this.AkademiPic.BackColor = System.Drawing.Color.Transparent;
             this.AkademiPic.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AkademiPic.BackgroundImage")));
             this.AkademiPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.AkademiPic.Location = new System.Drawing.Point(199, 12);
+            this.AkademiPic.Location = new System.Drawing.Point(210, 14);
             this.AkademiPic.Name = "AkademiPic";
             this.AkademiPic.Size = new System.Drawing.Size(511, 107);
             this.AkademiPic.TabIndex = 2;
@@ -118,7 +118,7 @@
             this.MedLogo.BackColor = System.Drawing.Color.Transparent;
             this.MedLogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("MedLogo.BackgroundImage")));
             this.MedLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.MedLogo.Location = new System.Drawing.Point(652, 25);
+            this.MedLogo.Location = new System.Drawing.Point(663, 27);
             this.MedLogo.Name = "MedLogo";
             this.MedLogo.Size = new System.Drawing.Size(71, 78);
             this.MedLogo.TabIndex = 3;
@@ -129,7 +129,7 @@
             this.PersoInfoLbl.AutoSize = true;
             this.PersoInfoLbl.BackColor = System.Drawing.Color.MistyRose;
             this.PersoInfoLbl.Font = new System.Drawing.Font("Sitka Text", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.PersoInfoLbl.Location = new System.Drawing.Point(33, 140);
+            this.PersoInfoLbl.Location = new System.Drawing.Point(44, 142);
             this.PersoInfoLbl.Name = "PersoInfoLbl";
             this.PersoInfoLbl.Size = new System.Drawing.Size(204, 26);
             this.PersoInfoLbl.TabIndex = 4;
@@ -138,7 +138,7 @@
             // 
             // NameTxtbox
             // 
-            this.NameTxtbox.Location = new System.Drawing.Point(106, 177);
+            this.NameTxtbox.Location = new System.Drawing.Point(117, 179);
             this.NameTxtbox.Name = "NameTxtbox";
             this.NameTxtbox.Size = new System.Drawing.Size(193, 27);
             this.NameTxtbox.TabIndex = 1;
@@ -148,7 +148,7 @@
             // PersoInfoPicbox
             // 
             this.PersoInfoPicbox.BackColor = System.Drawing.Color.MistyRose;
-            this.PersoInfoPicbox.Location = new System.Drawing.Point(24, 129);
+            this.PersoInfoPicbox.Location = new System.Drawing.Point(35, 131);
             this.PersoInfoPicbox.Name = "PersoInfoPicbox";
             this.PersoInfoPicbox.Size = new System.Drawing.Size(540, 248);
             this.PersoInfoPicbox.TabIndex = 8;
@@ -159,7 +159,7 @@
             this.NameLbl.AutoSize = true;
             this.NameLbl.BackColor = System.Drawing.Color.MistyRose;
             this.NameLbl.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.NameLbl.Location = new System.Drawing.Point(42, 179);
+            this.NameLbl.Location = new System.Drawing.Point(53, 181);
             this.NameLbl.Name = "NameLbl";
             this.NameLbl.Size = new System.Drawing.Size(61, 23);
             this.NameLbl.TabIndex = 9;
@@ -168,7 +168,7 @@
             // VisitInfoPicbox
             // 
             this.VisitInfoPicbox.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.VisitInfoPicbox.Location = new System.Drawing.Point(586, 129);
+            this.VisitInfoPicbox.Location = new System.Drawing.Point(597, 131);
             this.VisitInfoPicbox.Name = "VisitInfoPicbox";
             this.VisitInfoPicbox.Size = new System.Drawing.Size(294, 248);
             this.VisitInfoPicbox.TabIndex = 10;
@@ -179,7 +179,7 @@
             this.VisitInfoLbl.AutoSize = true;
             this.VisitInfoLbl.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.VisitInfoLbl.Font = new System.Drawing.Font("Sitka Text", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.VisitInfoLbl.Location = new System.Drawing.Point(598, 140);
+            this.VisitInfoLbl.Location = new System.Drawing.Point(609, 142);
             this.VisitInfoLbl.Name = "VisitInfoLbl";
             this.VisitInfoLbl.Size = new System.Drawing.Size(166, 26);
             this.VisitInfoLbl.TabIndex = 11;
@@ -191,7 +191,7 @@
             this.AgeLbl.AutoSize = true;
             this.AgeLbl.BackColor = System.Drawing.Color.MistyRose;
             this.AgeLbl.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.AgeLbl.Location = new System.Drawing.Point(328, 177);
+            this.AgeLbl.Location = new System.Drawing.Point(339, 179);
             this.AgeLbl.Name = "AgeLbl";
             this.AgeLbl.Size = new System.Drawing.Size(47, 23);
             this.AgeLbl.TabIndex = 12;
@@ -199,7 +199,7 @@
             // 
             // AgeTxtbox
             // 
-            this.AgeTxtbox.Location = new System.Drawing.Point(381, 175);
+            this.AgeTxtbox.Location = new System.Drawing.Point(392, 177);
             this.AgeTxtbox.Name = "AgeTxtbox";
             this.AgeTxtbox.Size = new System.Drawing.Size(155, 27);
             this.AgeTxtbox.TabIndex = 5;
@@ -210,7 +210,7 @@
             this.SexLbl.AutoSize = true;
             this.SexLbl.BackColor = System.Drawing.Color.MistyRose;
             this.SexLbl.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.SexLbl.Location = new System.Drawing.Point(328, 258);
+            this.SexLbl.Location = new System.Drawing.Point(339, 260);
             this.SexLbl.Name = "SexLbl";
             this.SexLbl.Size = new System.Drawing.Size(45, 23);
             this.SexLbl.TabIndex = 14;
@@ -222,7 +222,7 @@
             this.ContactLbl.AutoSize = true;
             this.ContactLbl.BackColor = System.Drawing.Color.MistyRose;
             this.ContactLbl.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ContactLbl.Location = new System.Drawing.Point(42, 244);
+            this.ContactLbl.Location = new System.Drawing.Point(53, 246);
             this.ContactLbl.Name = "ContactLbl";
             this.ContactLbl.Size = new System.Drawing.Size(94, 23);
             this.ContactLbl.TabIndex = 15;
@@ -233,7 +233,7 @@
             this.AddressLbl.AutoSize = true;
             this.AddressLbl.BackColor = System.Drawing.Color.MistyRose;
             this.AddressLbl.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.AddressLbl.Location = new System.Drawing.Point(42, 278);
+            this.AddressLbl.Location = new System.Drawing.Point(53, 280);
             this.AddressLbl.Name = "AddressLbl";
             this.AddressLbl.Size = new System.Drawing.Size(112, 23);
             this.AddressLbl.TabIndex = 16;
@@ -241,7 +241,7 @@
             // 
             // AddressTxtbox
             // 
-            this.AddressTxtbox.Location = new System.Drawing.Point(42, 308);
+            this.AddressTxtbox.Location = new System.Drawing.Point(53, 310);
             this.AddressTxtbox.Multiline = true;
             this.AddressTxtbox.Name = "AddressTxtbox";
             this.AddressTxtbox.Size = new System.Drawing.Size(494, 54);
@@ -251,7 +251,7 @@
             // 
             // ContTxtbox
             // 
-            this.ContTxtbox.Location = new System.Drawing.Point(142, 242);
+            this.ContTxtbox.Location = new System.Drawing.Point(153, 244);
             this.ContTxtbox.Name = "ContTxtbox";
             this.ContTxtbox.Size = new System.Drawing.Size(157, 27);
             this.ContTxtbox.TabIndex = 3;
@@ -263,7 +263,7 @@
             this.BdayLbl.AutoSize = true;
             this.BdayLbl.BackColor = System.Drawing.Color.MistyRose;
             this.BdayLbl.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.BdayLbl.Location = new System.Drawing.Point(326, 217);
+            this.BdayLbl.Location = new System.Drawing.Point(337, 219);
             this.BdayLbl.Name = "BdayLbl";
             this.BdayLbl.Size = new System.Drawing.Size(84, 23);
             this.BdayLbl.TabIndex = 19;
@@ -272,7 +272,7 @@
             // BdayDate
             // 
             this.BdayDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.BdayDate.Location = new System.Drawing.Point(411, 214);
+            this.BdayDate.Location = new System.Drawing.Point(422, 216);
             this.BdayDate.Name = "BdayDate";
             this.BdayDate.Size = new System.Drawing.Size(125, 27);
             this.BdayDate.TabIndex = 6;
@@ -282,7 +282,7 @@
             this.DateLbl.AutoSize = true;
             this.DateLbl.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.DateLbl.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.DateLbl.Location = new System.Drawing.Point(621, 177);
+            this.DateLbl.Location = new System.Drawing.Point(632, 179);
             this.DateLbl.Name = "DateLbl";
             this.DateLbl.Size = new System.Drawing.Size(54, 23);
             this.DateLbl.TabIndex = 22;
@@ -292,7 +292,7 @@
             // VisitDate
             // 
             this.VisitDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.VisitDate.Location = new System.Drawing.Point(681, 176);
+            this.VisitDate.Location = new System.Drawing.Point(692, 178);
             this.VisitDate.Name = "VisitDate";
             this.VisitDate.Size = new System.Drawing.Size(177, 27);
             this.VisitDate.TabIndex = 9;
@@ -302,7 +302,7 @@
             this.TimeOutLbl.AutoSize = true;
             this.TimeOutLbl.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.TimeOutLbl.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TimeOutLbl.Location = new System.Drawing.Point(621, 254);
+            this.TimeOutLbl.Location = new System.Drawing.Point(632, 256);
             this.TimeOutLbl.Name = "TimeOutLbl";
             this.TimeOutLbl.Size = new System.Drawing.Size(89, 23);
             this.TimeOutLbl.TabIndex = 24;
@@ -313,7 +313,7 @@
             this.TimeInLbl.AutoSize = true;
             this.TimeInLbl.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.TimeInLbl.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TimeInLbl.Location = new System.Drawing.Point(621, 214);
+            this.TimeInLbl.Location = new System.Drawing.Point(632, 216);
             this.TimeInLbl.Name = "TimeInLbl";
             this.TimeInLbl.Size = new System.Drawing.Size(75, 23);
             this.TimeInLbl.TabIndex = 26;
@@ -322,7 +322,7 @@
             // TimeIn
             // 
             this.TimeIn.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.TimeIn.Location = new System.Drawing.Point(702, 212);
+            this.TimeIn.Location = new System.Drawing.Point(713, 214);
             this.TimeIn.Name = "TimeIn";
             this.TimeIn.Size = new System.Drawing.Size(156, 27);
             this.TimeIn.TabIndex = 10;
@@ -332,7 +332,7 @@
             this.ResonLbl.AutoSize = true;
             this.ResonLbl.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.ResonLbl.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ResonLbl.Location = new System.Drawing.Point(621, 291);
+            this.ResonLbl.Location = new System.Drawing.Point(632, 293);
             this.ResonLbl.Name = "ResonLbl";
             this.ResonLbl.Size = new System.Drawing.Size(139, 23);
             this.ResonLbl.TabIndex = 28;
@@ -340,7 +340,7 @@
             // 
             // ReasonTxtbox
             // 
-            this.ReasonTxtbox.Location = new System.Drawing.Point(621, 317);
+            this.ReasonTxtbox.Location = new System.Drawing.Point(632, 319);
             this.ReasonTxtbox.Multiline = true;
             this.ReasonTxtbox.Name = "ReasonTxtbox";
             this.ReasonTxtbox.Size = new System.Drawing.Size(237, 44);
@@ -350,7 +350,7 @@
             // MedInfoPicbox
             // 
             this.MedInfoPicbox.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.MedInfoPicbox.Location = new System.Drawing.Point(24, 394);
+            this.MedInfoPicbox.Location = new System.Drawing.Point(35, 396);
             this.MedInfoPicbox.Name = "MedInfoPicbox";
             this.MedInfoPicbox.Size = new System.Drawing.Size(856, 285);
             this.MedInfoPicbox.TabIndex = 30;
@@ -361,7 +361,7 @@
             this.MedInfoLbl.AutoSize = true;
             this.MedInfoLbl.BackColor = System.Drawing.Color.LightSteelBlue;
             this.MedInfoLbl.Font = new System.Drawing.Font("Sitka Text", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.MedInfoLbl.Location = new System.Drawing.Point(33, 408);
+            this.MedInfoLbl.Location = new System.Drawing.Point(44, 410);
             this.MedInfoLbl.Name = "MedInfoLbl";
             this.MedInfoLbl.Size = new System.Drawing.Size(195, 26);
             this.MedInfoLbl.TabIndex = 31;
@@ -372,7 +372,7 @@
             this.VaccineLbl.AutoSize = true;
             this.VaccineLbl.BackColor = System.Drawing.Color.LightSteelBlue;
             this.VaccineLbl.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.VaccineLbl.Location = new System.Drawing.Point(57, 478);
+            this.VaccineLbl.Location = new System.Drawing.Point(68, 480);
             this.VaccineLbl.Name = "VaccineLbl";
             this.VaccineLbl.Size = new System.Drawing.Size(171, 23);
             this.VaccineLbl.TabIndex = 32;
@@ -383,7 +383,7 @@
             this.FluLbl.AutoSize = true;
             this.FluLbl.BackColor = System.Drawing.Color.LightSteelBlue;
             this.FluLbl.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.FluLbl.Location = new System.Drawing.Point(394, 411);
+            this.FluLbl.Location = new System.Drawing.Point(405, 413);
             this.FluLbl.Name = "FluLbl";
             this.FluLbl.Size = new System.Drawing.Size(265, 23);
             this.FluLbl.TabIndex = 33;
@@ -393,7 +393,7 @@
             // 
             this.ConsentLbl.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ConsentLbl.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ConsentLbl.Location = new System.Drawing.Point(92, 582);
+            this.ConsentLbl.Location = new System.Drawing.Point(103, 584);
             this.ConsentLbl.Name = "ConsentLbl";
             this.ConsentLbl.Size = new System.Drawing.Size(754, 90);
             this.ConsentLbl.TabIndex = 34;
@@ -404,7 +404,7 @@
             this.YesLbl.AutoSize = true;
             this.YesLbl.BackColor = System.Drawing.Color.LightSteelBlue;
             this.YesLbl.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.YesLbl.Location = new System.Drawing.Point(394, 461);
+            this.YesLbl.Location = new System.Drawing.Point(405, 463);
             this.YesLbl.Name = "YesLbl";
             this.YesLbl.Size = new System.Drawing.Size(309, 23);
             this.YesLbl.TabIndex = 35;
@@ -413,7 +413,7 @@
             // ConcentChkbox
             // 
             this.ConcentChkbox.AutoSize = true;
-            this.ConcentChkbox.Location = new System.Drawing.Point(57, 585);
+            this.ConcentChkbox.Location = new System.Drawing.Point(68, 587);
             this.ConcentChkbox.Name = "ConcentChkbox";
             this.ConcentChkbox.Size = new System.Drawing.Size(18, 17);
             this.ConcentChkbox.TabIndex = 19;
@@ -422,7 +422,7 @@
             // 
             // SymptomsTxtbox
             // 
-            this.SymptomsTxtbox.Location = new System.Drawing.Point(394, 495);
+            this.SymptomsTxtbox.Location = new System.Drawing.Point(405, 497);
             this.SymptomsTxtbox.Multiline = true;
             this.SymptomsTxtbox.Name = "SymptomsTxtbox";
             this.SymptomsTxtbox.Size = new System.Drawing.Size(464, 78);
@@ -434,7 +434,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.LightSteelBlue;
             this.label1.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(57, 443);
+            this.label1.Location = new System.Drawing.Point(68, 445);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(119, 23);
             this.label1.TabIndex = 40;
@@ -442,7 +442,7 @@
             // 
             // TemperatureTxtBox
             // 
-            this.TemperatureTxtBox.Location = new System.Drawing.Point(182, 442);
+            this.TemperatureTxtBox.Location = new System.Drawing.Point(193, 444);
             this.TemperatureTxtBox.Name = "TemperatureTxtBox";
             this.TemperatureTxtBox.Size = new System.Drawing.Size(55, 27);
             this.TemperatureTxtBox.TabIndex = 13;
@@ -454,7 +454,7 @@
             this.NoFluRdioBut.AutoSize = true;
             this.NoFluRdioBut.BackColor = System.Drawing.Color.LightSteelBlue;
             this.NoFluRdioBut.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.NoFluRdioBut.Location = new System.Drawing.Point(109, 5);
+            this.NoFluRdioBut.Location = new System.Drawing.Point(114, 5);
             this.NoFluRdioBut.Name = "NoFluRdioBut";
             this.NoFluRdioBut.Size = new System.Drawing.Size(54, 27);
             this.NoFluRdioBut.TabIndex = 17;
@@ -467,7 +467,7 @@
             this.YesFluRdioBut.AutoSize = true;
             this.YesFluRdioBut.BackColor = System.Drawing.Color.LightSteelBlue;
             this.YesFluRdioBut.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.YesFluRdioBut.Location = new System.Drawing.Point(22, 6);
+            this.YesFluRdioBut.Location = new System.Drawing.Point(27, 6);
             this.YesFluRdioBut.Name = "YesFluRdioBut";
             this.YesFluRdioBut.Size = new System.Drawing.Size(55, 27);
             this.YesFluRdioBut.TabIndex = 16;
@@ -481,7 +481,7 @@
             this.SubmitButton.Enabled = false;
             this.SubmitButton.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.SubmitButton.ForeColor = System.Drawing.Color.White;
-            this.SubmitButton.Location = new System.Drawing.Point(760, 687);
+            this.SubmitButton.Location = new System.Drawing.Point(771, 689);
             this.SubmitButton.Name = "SubmitButton";
             this.SubmitButton.Size = new System.Drawing.Size(120, 44);
             this.SubmitButton.TabIndex = 20;
@@ -494,7 +494,7 @@
             this.SexPanel.BackColor = System.Drawing.Color.MistyRose;
             this.SexPanel.Controls.Add(this.MaleRadioButton);
             this.SexPanel.Controls.Add(this.FemaleRadioButton);
-            this.SexPanel.Location = new System.Drawing.Point(379, 249);
+            this.SexPanel.Location = new System.Drawing.Point(390, 251);
             this.SexPanel.Name = "SexPanel";
             this.SexPanel.Size = new System.Drawing.Size(177, 35);
             this.SexPanel.TabIndex = 7;
@@ -504,7 +504,7 @@
             this.MaleRadioButton.AutoSize = true;
             this.MaleRadioButton.BackColor = System.Drawing.Color.MistyRose;
             this.MaleRadioButton.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MaleRadioButton.Location = new System.Drawing.Point(1, 2);
+            this.MaleRadioButton.Location = new System.Drawing.Point(6, 2);
             this.MaleRadioButton.Name = "MaleRadioButton";
             this.MaleRadioButton.Size = new System.Drawing.Size(68, 27);
             this.MaleRadioButton.TabIndex = 7;
@@ -517,7 +517,7 @@
             this.FemaleRadioButton.AutoSize = true;
             this.FemaleRadioButton.BackColor = System.Drawing.Color.MistyRose;
             this.FemaleRadioButton.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.FemaleRadioButton.Location = new System.Drawing.Point(80, 3);
+            this.FemaleRadioButton.Location = new System.Drawing.Point(85, 3);
             this.FemaleRadioButton.Name = "FemaleRadioButton";
             this.FemaleRadioButton.Size = new System.Drawing.Size(85, 27);
             this.FemaleRadioButton.TabIndex = 8;
@@ -531,7 +531,7 @@
             this.panel1.BackColor = System.Drawing.Color.LightSteelBlue;
             this.panel1.Controls.Add(this.YesFluRdioBut);
             this.panel1.Controls.Add(this.NoFluRdioBut);
-            this.panel1.Location = new System.Drawing.Point(665, 408);
+            this.panel1.Location = new System.Drawing.Point(676, 410);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(192, 41);
             this.panel1.TabIndex = 15;
@@ -541,7 +541,7 @@
             this.VaccinePanel.BackColor = System.Drawing.Color.LightSteelBlue;
             this.VaccinePanel.Controls.Add(this.NoVacRdioBut);
             this.VaccinePanel.Controls.Add(this.YesVacRdioBut);
-            this.VaccinePanel.Location = new System.Drawing.Point(72, 500);
+            this.VaccinePanel.Location = new System.Drawing.Point(83, 502);
             this.VaccinePanel.Name = "VaccinePanel";
             this.VaccinePanel.Size = new System.Drawing.Size(187, 79);
             this.VaccinePanel.TabIndex = 14;
@@ -551,7 +551,7 @@
             this.NoVacRdioBut.AutoSize = true;
             this.NoVacRdioBut.BackColor = System.Drawing.Color.LightSteelBlue;
             this.NoVacRdioBut.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.NoVacRdioBut.Location = new System.Drawing.Point(3, 47);
+            this.NoVacRdioBut.Location = new System.Drawing.Point(7, 47);
             this.NoVacRdioBut.Name = "NoVacRdioBut";
             this.NoVacRdioBut.Size = new System.Drawing.Size(118, 27);
             this.NoVacRdioBut.TabIndex = 15;
@@ -564,7 +564,7 @@
             this.YesVacRdioBut.AutoSize = true;
             this.YesVacRdioBut.BackColor = System.Drawing.Color.LightSteelBlue;
             this.YesVacRdioBut.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.YesVacRdioBut.Location = new System.Drawing.Point(3, 5);
+            this.YesVacRdioBut.Location = new System.Drawing.Point(7, 5);
             this.YesVacRdioBut.Name = "YesVacRdioBut";
             this.YesVacRdioBut.Size = new System.Drawing.Size(174, 27);
             this.YesVacRdioBut.TabIndex = 14;
@@ -575,7 +575,7 @@
             // TimeOut
             // 
             this.TimeOut.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.TimeOut.Location = new System.Drawing.Point(716, 249);
+            this.TimeOut.Location = new System.Drawing.Point(727, 251);
             this.TimeOut.Name = "TimeOut";
             this.TimeOut.Size = new System.Drawing.Size(142, 27);
             this.TimeOut.TabIndex = 11;
@@ -585,7 +585,7 @@
             this.StudentNumLbl.AutoSize = true;
             this.StudentNumLbl.BackColor = System.Drawing.Color.MistyRose;
             this.StudentNumLbl.Font = new System.Drawing.Font("Trebuchet MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.StudentNumLbl.Location = new System.Drawing.Point(42, 212);
+            this.StudentNumLbl.Location = new System.Drawing.Point(53, 214);
             this.StudentNumLbl.Name = "StudentNumLbl";
             this.StudentNumLbl.Size = new System.Drawing.Size(94, 23);
             this.StudentNumLbl.TabIndex = 52;
@@ -593,7 +593,7 @@
             // 
             // StudentNumTxtbox
             // 
-            this.StudentNumTxtbox.Location = new System.Drawing.Point(142, 209);
+            this.StudentNumTxtbox.Location = new System.Drawing.Point(153, 211);
             this.StudentNumTxtbox.Name = "StudentNumTxtbox";
             this.StudentNumTxtbox.Size = new System.Drawing.Size(157, 27);
             this.StudentNumTxtbox.TabIndex = 2;
@@ -608,7 +608,7 @@
             this.AccessButton.FlatAppearance.BorderSize = 0;
             this.AccessButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AccessButton.Image = global::Contact_Tracing_App.Properties.Resources.libroehe;
-            this.AccessButton.Location = new System.Drawing.Point(43, 683);
+            this.AccessButton.Location = new System.Drawing.Point(54, 685);
             this.AccessButton.Name = "AccessButton";
             this.AccessButton.Size = new System.Drawing.Size(60, 54);
             this.AccessButton.TabIndex = 53;
@@ -617,15 +617,16 @@
             // 
             // QRButton
             // 
-            this.QRButton.BackColor = System.Drawing.Color.Tan;
-            this.QRButton.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.QRButton.ForeColor = System.Drawing.Color.Black;
-            this.QRButton.Location = new System.Drawing.Point(768, 83);
+            this.QRButton.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.QRButton.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.QRButton.ForeColor = System.Drawing.Color.White;
+            this.QRButton.Location = new System.Drawing.Point(745, 89);
             this.QRButton.Name = "QRButton";
-            this.QRButton.Size = new System.Drawing.Size(112, 40);
+            this.QRButton.Size = new System.Drawing.Size(146, 36);
             this.QRButton.TabIndex = 54;
             this.QRButton.Text = "Scan QR code";
             this.QRButton.UseVisualStyleBackColor = false;
+            this.QRButton.Click += new System.EventHandler(this.QRButton_Click);
             // 
             // CTInterfaceForm
             // 
@@ -634,7 +635,7 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(910, 741);
+            this.ClientSize = new System.Drawing.Size(929, 741);
             this.Controls.Add(this.QRButton);
             this.Controls.Add(this.AccessButton);
             this.Controls.Add(this.StudentNumTxtbox);

@@ -1,5 +1,4 @@
-using AForge.Video;
-using AForge.Video.DirectShow;
+
 
 namespace Contact_Tracing_App
 {
@@ -9,8 +8,7 @@ namespace Contact_Tracing_App
         {
             InitializeComponent();
         }
-        FilterInfoCollection filterInfoCollection;
-        VideoCaptureDevice captureDevice;
+        
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -193,6 +191,12 @@ namespace Contact_Tracing_App
             LoginForm loginForm = new LoginForm();
             loginForm.ShowDialog();
             
+        }
+
+        private void QRButton_Click(object sender, EventArgs e)
+        {
+            QR_Code_Scanner qR_Code_Scanner = new QR_Code_Scanner();
+            qR_Code_Scanner.Show();
         }
     }
 }

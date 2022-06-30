@@ -23,3 +23,4 @@ C:\Users\Nicole\source\repos\Contact Tracing App\Contact Tracing App\bin\Debug\n
 C:\Users\Nicole\source\repos\Contact Tracing App\Contact Tracing App\bin\Debug\net6.0-windows\AForge.Video.DirectShow.dll
 C:\Users\Nicole\source\repos\Contact Tracing App\Contact Tracing App\bin\Debug\net6.0-windows\zxing.dll
 C:\Users\Nicole\source\repos\Contact Tracing App\Contact Tracing App\obj\Debug\net6.0-windows\Contact Tracing App.csproj.CopyComplete
+C:\Users\Nicole\source\repos\Contact Tracing App\Contact Tracing App\obj\Debug\net6.0-windows\Contact_Tracing_App.QR_Code_Scanner.resources

@@ -4,6 +4,9 @@
     <Compile Update="CTInterface.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="QR Code Scanner.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Records.cs">
       <SubType>Form</SubType>
     </Compile>
