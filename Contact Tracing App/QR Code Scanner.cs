@@ -18,7 +18,7 @@ namespace Contact_Tracing_App
     
     public partial class QR_Code_Scanner : Form
     {
-        public string QRCodeText;
+        
         public QR_Code_Scanner()
         {
             InitializeComponent();
@@ -75,11 +75,13 @@ namespace Contact_Tracing_App
                 Result result = barcodeReader.Decode((Bitmap)ScannerPictureBox.Image);
                 if(result != null)
                     {
-                    QRCodeText = result.Text;
+                    //QRCodeText = result.Text;
                     //textBox1.Text = result.ToString();
-                    //TickTimer.Stop();
+                    TickTimer.Stop();
                     //if(captureDevice.IsRunning)
-                    StreamWriter file = new StreamWriter(@"C:\Users\Nicole\Documents\QRCodeText.txt");
+                    StreamWriter QRCodeText = new StreamWriter(@"C:\Users\Nicole\Documents\QRCodeText.txt");
+                    QRCodeText.WriteLine(result);
+                    QRCodeText.Close();
                     this.Close();
                 }
                     

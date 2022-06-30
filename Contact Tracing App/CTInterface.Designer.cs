@@ -145,7 +145,6 @@
             this.NameTxtbox.TabIndex = 1;
             this.NameTxtbox.Text = "(Given, M.I, Last)";
             this.NameTxtbox.Click += new System.EventHandler(this.NameTxtbox_Click);
-            this.NameTxtbox.TextChanged += new System.EventHandler(this.NameTxtbox_TextChanged);
             // 
             // PersoInfoPicbox
             // 
@@ -642,6 +641,7 @@
             this.AutofillButton.TabIndex = 55;
             this.AutofillButton.Text = "Autofill";
             this.AutofillButton.UseVisualStyleBackColor = false;
+            this.AutofillButton.Click += new System.EventHandler(this.AutofillButton_Click);
             // 
             // CTInterfaceForm
             // 

@@ -64,6 +64,7 @@ namespace Contact_Tracing_App
 
         private void RecordsForm_Load(object sender, EventArgs e)
         {
+            
             StreamReader CTrecord = new StreamReader(@"C:\Users\Nicole\Documents\ContactTracing.txt");
 
             List<string> Records = new List<string>();

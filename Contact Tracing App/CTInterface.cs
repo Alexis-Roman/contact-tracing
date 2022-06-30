@@ -1,4 +1,6 @@
-
+using AForge;
+using AForge.Video;
+using AForge.Video.DirectShow;
 
 namespace Contact_Tracing_App
 {
@@ -8,7 +10,7 @@ namespace Contact_Tracing_App
         {
             InitializeComponent();
         }
-        
+        VideoCaptureDevice captureDevice;
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -199,9 +201,21 @@ namespace Contact_Tracing_App
 
         }
 
-        private void NameTxtbox_TextChanged(object sender, EventArgs e)
+        private void AutofillButton_Click(object sender, EventArgs e)
         {
-      
+            
+            StreamReader QRCodeText = new StreamReader(@"C:\Users\Nicole\Documents\QRCodeText.txt");
+            string ScannedInfo = "";
+
+            List<string> QRCTextList = new List<string>();
+            QRCTextList.Add(QRCodeText.ReadToEnd());
+            for (int i = 0; i < QRCTextList.Count; i++)
+            {
+                
+                    ScannedInfo= QRCTextList[i];
+
+            }
+            MessageBox.Show(ScannedInfo.ToString());
         }
     }
 }
