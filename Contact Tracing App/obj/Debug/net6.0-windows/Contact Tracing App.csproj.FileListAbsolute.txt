@@ -18,3 +18,8 @@ C:\Users\Nicole\source\repos\Contact Tracing App\Contact Tracing App\obj\Debug\n
 C:\Users\Nicole\source\repos\Contact Tracing App\Contact Tracing App\obj\Debug\net6.0-windows\Contact_Tracing_App.LoginForm.resources
 C:\Users\Nicole\source\repos\Contact Tracing App\Contact Tracing App\obj\Debug\net6.0-windows\Contact_Tracing_App.RecordsForm.resources
 C:\Users\Nicole\source\repos\Contact Tracing App\Contact Tracing App\obj\Debug\net6.0-windows\Contact_Tracing_App.CTInterfaceForm.resources
+C:\Users\Nicole\source\repos\Contact Tracing App\Contact Tracing App\bin\Debug\net6.0-windows\AForge.dll
+C:\Users\Nicole\source\repos\Contact Tracing App\Contact Tracing App\bin\Debug\net6.0-windows\AForge.Video.dll
+C:\Users\Nicole\source\repos\Contact Tracing App\Contact Tracing App\bin\Debug\net6.0-windows\AForge.Video.DirectShow.dll
+C:\Users\Nicole\source\repos\Contact Tracing App\Contact Tracing App\bin\Debug\net6.0-windows\zxing.dll
+C:\Users\Nicole\source\repos\Contact Tracing App\Contact Tracing App\obj\Debug\net6.0-windows\Contact Tracing App.csproj.CopyComplete

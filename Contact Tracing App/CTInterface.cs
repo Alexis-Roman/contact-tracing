@@ -1,3 +1,5 @@
+using AForge.Video;
+using AForge.Video.DirectShow;
 
 namespace Contact_Tracing_App
 {
@@ -7,6 +9,8 @@ namespace Contact_Tracing_App
         {
             InitializeComponent();
         }
+        FilterInfoCollection filterInfoCollection;
+        VideoCaptureDevice captureDevice;
 
         private void Form1_Load(object sender, EventArgs e)
         {

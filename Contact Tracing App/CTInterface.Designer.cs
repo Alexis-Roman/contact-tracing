@@ -78,6 +78,7 @@
             this.StudentNumLbl = new System.Windows.Forms.Label();
             this.StudentNumTxtbox = new System.Windows.Forms.TextBox();
             this.AccessButton = new System.Windows.Forms.Button();
+            this.QRButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.LogoPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AkademiPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MedLogo)).BeginInit();
@@ -614,6 +615,18 @@
             this.AccessButton.UseVisualStyleBackColor = false;
             this.AccessButton.Click += new System.EventHandler(this.AccessButton_Click);
             // 
+            // QRButton
+            // 
+            this.QRButton.BackColor = System.Drawing.Color.Tan;
+            this.QRButton.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.QRButton.ForeColor = System.Drawing.Color.Black;
+            this.QRButton.Location = new System.Drawing.Point(768, 83);
+            this.QRButton.Name = "QRButton";
+            this.QRButton.Size = new System.Drawing.Size(112, 40);
+            this.QRButton.TabIndex = 54;
+            this.QRButton.Text = "Scan QR code";
+            this.QRButton.UseVisualStyleBackColor = false;
+            // 
             // CTInterfaceForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -621,7 +634,8 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(904, 741);
+            this.ClientSize = new System.Drawing.Size(910, 741);
+            this.Controls.Add(this.QRButton);
             this.Controls.Add(this.AccessButton);
             this.Controls.Add(this.StudentNumTxtbox);
             this.Controls.Add(this.StudentNumLbl);
@@ -740,5 +754,6 @@
         private Label StudentNumLbl;
         private TextBox StudentNumTxtbox;
         private Button AccessButton;
+        private Button QRButton;
     }
 }
