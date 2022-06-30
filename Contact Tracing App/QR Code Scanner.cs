@@ -43,6 +43,7 @@ namespace Contact_Tracing_App
                 [CamComboBox.SelectedIndex].MonikerString);
             captureDevice.NewFrame += CaptureDevice_NewFrame;
             captureDevice.Start();
+            TickTimer.Start();
 
         }
 
@@ -59,9 +60,26 @@ namespace Contact_Tracing_App
             }
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private void TickTimer_Tick(object sender, EventArgs e)
         {
+            /*
+            if (ScannerPictureBox.Image != null)
+            {
+                BarcodeReaderGeneric barcodeReader = new BarcodeReaderGeneric();
+                Result result = barcodeReader.Decode((Bitmap).);
+                if(result != null)
+                {
+                    textBox1.Text = result.ToString();
+                    TickTimer.Stop();
+                    if (captureDevice.IsRunning)
+                    {
+                        captureDevice.Stop();
+                    }
+
+                }
             
+            }
+            */
         }
     }
 }

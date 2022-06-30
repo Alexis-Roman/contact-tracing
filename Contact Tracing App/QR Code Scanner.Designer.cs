@@ -33,7 +33,8 @@
             this.QRLbl = new System.Windows.Forms.Label();
             this.ScanButton = new System.Windows.Forms.Button();
             this.ScannerPictureBox = new System.Windows.Forms.PictureBox();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.TickTimer = new System.Windows.Forms.Timer(this.components);
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.ScannerPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,7 +60,6 @@
             // ScanButton
             // 
             this.ScanButton.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.ScanButton.Enabled = false;
             this.ScanButton.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ScanButton.ForeColor = System.Drawing.Color.White;
             this.ScanButton.Location = new System.Drawing.Point(162, 445);
@@ -78,16 +78,25 @@
             this.ScannerPictureBox.TabIndex = 22;
             this.ScannerPictureBox.TabStop = false;
             // 
-            // timer1
+            // TickTimer
             // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.TickTimer.Tick += new System.EventHandler(this.TickTimer_Tick);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(455, 101);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(334, 328);
+            this.textBox1.TabIndex = 23;
             // 
             // QR_Code_Scanner
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(441, 499);
+            this.ClientSize = new System.Drawing.Size(825, 499);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.ScannerPictureBox);
             this.Controls.Add(this.ScanButton);
             this.Controls.Add(this.QRLbl);
@@ -107,6 +116,7 @@
         private Label QRLbl;
         private Button ScanButton;
         private PictureBox ScannerPictureBox;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer TickTimer;
+        private TextBox textBox1;
     }
 }
