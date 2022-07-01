@@ -240,5 +240,10 @@ namespace Contact_Tracing_App
                                "Uhh oh!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        private void CTInterfaceForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            captureDevice.Stop();
+        }
     }
 }

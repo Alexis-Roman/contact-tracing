@@ -82,6 +82,7 @@ namespace Contact_Tracing_App
                     StreamWriter QRCodeText = new StreamWriter(@"C:\Users\Nicole\Documents\QRCodeText.txt");
                     QRCodeText.WriteLine(result);
                     QRCodeText.Close();
+                    captureDevice.SignalToStop();
                     this.Close();
                 }
                     

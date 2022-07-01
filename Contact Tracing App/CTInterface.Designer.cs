@@ -716,6 +716,7 @@
             this.Name = "CTInterfaceForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Akademi High School Health Department";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.CTInterfaceForm_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.LogoPicBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AkademiPic)).EndInit();
