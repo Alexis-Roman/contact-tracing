@@ -243,7 +243,7 @@ namespace Contact_Tracing_App
 
         private void CTInterfaceForm_FormClosed(object sender, FormClosedEventArgs e)
         {
-            captureDevice.Stop();
+            System.IO.File.Delete(@"C:\Users\Nicole\Documents\QRCodeText.txt");
         }
     }
 }
