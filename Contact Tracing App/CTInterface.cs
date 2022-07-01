@@ -205,7 +205,8 @@ namespace Contact_Tracing_App
 
         private void AutofillButton_Click(object sender, EventArgs e)
         {
-            if(QRTxtbox.Text != "")
+            //if(QRTxtbox.Text != "")
+            try
             {
                 StreamReader QRCodeText = new StreamReader(@"C:\Users\Nicole\Documents\QRCodeText.txt");
                 string ScannedInfo = "";
@@ -233,7 +234,7 @@ namespace Contact_Tracing_App
 
                 QRCodeText.Close();
             }
-            else
+            catch
             {
                 MessageBox.Show("Please scan QR Code First. Thank you!",
                                "Uhh oh!", MessageBoxButtons.OK, MessageBoxIcon.Information);
