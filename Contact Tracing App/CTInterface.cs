@@ -205,32 +205,39 @@ namespace Contact_Tracing_App
 
         private void AutofillButton_Click(object sender, EventArgs e)
         {
-            
-            StreamReader QRCodeText = new StreamReader(@"C:\Users\Nicole\Documents\QRCodeText.txt");
-            string ScannedInfo = "";
+            if(QRTxtbox.Text != "")
+            {
+                StreamReader QRCodeText = new StreamReader(@"C:\Users\Nicole\Documents\QRCodeText.txt");
+                string ScannedInfo = "";
 
-            List<string> QRCTextList = new List<string>();
-            QRCTextList.Add(QRCodeText.ReadToEnd());
-            for (int i = 0; i < QRCTextList.Count; i++)
-            {
+                List<string> QRCTextList = new List<string>();
+                QRCTextList.Add(QRCodeText.ReadToEnd());
+                for (int i = 0; i < QRCTextList.Count; i++)
+                {
                     ScannedInfo = QRCTextList[i];
-            }
-            //Autofill from QRCode txt.file
-            QRTxtbox.Text = ScannedInfo;
-            NameTxtbox.Text = QRTxtbox.Lines[0];
-            StudentNumTxtbox.Text = QRTxtbox.Lines[1];
-            ContTxtbox.Text = QRTxtbox.Lines[2];
-            AgeTxtbox.Text = QRTxtbox.Lines[3];
-            BdayDate.Text = QRTxtbox.Lines[4];
-            AddressTxtbox.Text = QRTxtbox.Lines[6];
-            if (QRTxtbox.Text.Contains("Female"))
-            {
-                FemaleRadioButton.Checked = true;
+                }
+                //Autofill from QRCode txt.file
+                QRTxtbox.Text = ScannedInfo;
+                NameTxtbox.Text = QRTxtbox.Lines[0];
+                StudentNumTxtbox.Text = QRTxtbox.Lines[1];
+                ContTxtbox.Text = QRTxtbox.Lines[2];
+                AgeTxtbox.Text = QRTxtbox.Lines[3];
+                BdayDate.Text = QRTxtbox.Lines[4];
+                AddressTxtbox.Text = QRTxtbox.Lines[6];
+                if (QRTxtbox.Text.Contains("Female"))
+                {
+                    FemaleRadioButton.Checked = true;
+                }
+                else
+                    MaleRadioButton.Checked = true;
+
+                QRCodeText.Close();
             }
             else
-                MaleRadioButton.Checked = true;
-
-            QRCodeText.Close();
+            {
+                MessageBox.Show("Please scan QR Code First. Thank you!",
+                               "Uhh oh!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }
