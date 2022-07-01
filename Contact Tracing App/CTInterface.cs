@@ -105,7 +105,8 @@ namespace Contact_Tracing_App
                 file.WriteLine("");
                 MessageBox.Show("Your information has been recorded. Keep safe!",
                       "Information Recorded", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                
+
+                System.IO.File.Delete(@"C:\Users\Nicole\Documents\QRCodeText.txt");
                 file.Close();
             }
             
@@ -127,6 +128,7 @@ namespace Contact_Tracing_App
 
                 MessageBox.Show("Please provide the necessary information.",
                       "Incomplete Input", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                
             }
 
         }
@@ -213,23 +215,22 @@ namespace Contact_Tracing_App
             {
                     ScannedInfo = QRCTextList[i];
             }
-            //NameTxtbox.Text = String.Line(QRCTextList[1]);
-            //NameTxtbox.Text = ScannedInfo.IndexOf("Name:").ToString();
-            //NameTxtbox.Text = ScannedInfo.ElementAt(0).ToString()z;
+            //Autofill from QRCode txt.file
             QRTxtbox.Text = ScannedInfo;
             NameTxtbox.Text = QRTxtbox.Lines[0];
             StudentNumTxtbox.Text = QRTxtbox.Lines[1];
             ContTxtbox.Text = QRTxtbox.Lines[2];
             AgeTxtbox.Text = QRTxtbox.Lines[3];
             BdayDate.Text = QRTxtbox.Lines[4];
+            AddressTxtbox.Text = QRTxtbox.Lines[6];
             if (QRTxtbox.Text.Contains("Female"))
             {
                 FemaleRadioButton.Checked = true;
             }
             else
                 MaleRadioButton.Checked = true;
-                
-            //MessageBox.Show(ScannedInfo);
+
+            QRCodeText.Close();
         }
     }
 }
